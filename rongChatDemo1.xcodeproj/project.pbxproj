@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDD1DB8F17800721145 /* AppDelegate.swift */; };
+		75CC9CE01DB8F17800721145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDF1DB8F17800721145 /* ViewController.swift */; };
+		75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE11DB8F17800721145 /* Main.storyboard */; };
+		75CC9CE51DB8F17800721145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE41DB8F17800721145 /* Assets.xcassets */; };
+		75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */; };
+		75CC9CF31DB8F17800721145 /* rongChatDemo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */; };
+		75CC9CFE1DB8F17800721145 /* rongChatDemo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CFD1DB8F17800721145 /* rongChatDemo1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75CC9CEF1DB8F17800721145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CC9CD21DB8F17700721145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CC9CD91DB8F17700721145;
+			remoteInfo = rongChatDemo1;
+		};
+		75CC9CFA1DB8F17800721145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75CC9CD21DB8F17700721145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75CC9CD91DB8F17700721145;
+			remoteInfo = rongChatDemo1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rongChatDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CC9CDD1DB8F17800721145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75CC9CDF1DB8F17800721145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75CC9CE21DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75CC9CE41DB8F17800721145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75CC9CE71DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75CC9CE91DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CC9CEE1DB8F17800721145 /* rongChatDemo1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rongChatDemo1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rongChatDemo1Tests.swift; sourceTree = "<group>"; };
+		75CC9CF41DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CC9CF91DB8F17800721145 /* rongChatDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rongChatDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CC9CFD1DB8F17800721145 /* rongChatDemo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rongChatDemo1UITests.swift; sourceTree = "<group>"; };
+		75CC9CFF1DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75CC9CD71DB8F17700721145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CEB1DB8F17800721145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CF61DB8F17800721145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75CC9CD11DB8F17700721145 = {
+			isa = PBXGroup;
+			children = (
+				75CC9CDC1DB8F17800721145 /* rongChatDemo1 */,
+				75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */,
+				75CC9CFC1DB8F17800721145 /* rongChatDemo1UITests */,
+				75CC9CDB1DB8F17800721145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CC9CDB1DB8F17800721145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */,
+				75CC9CEE1DB8F17800721145 /* rongChatDemo1Tests.xctest */,
+				75CC9CF91DB8F17800721145 /* rongChatDemo1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75CC9CDC1DB8F17800721145 /* rongChatDemo1 */ = {
+			isa = PBXGroup;
+			children = (
+				75CC9CDD1DB8F17800721145 /* AppDelegate.swift */,
+				75CC9CDF1DB8F17800721145 /* ViewController.swift */,
+				75CC9CE11DB8F17800721145 /* Main.storyboard */,
+				75CC9CE41DB8F17800721145 /* Assets.xcassets */,
+				75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */,
+				75CC9CE91DB8F17800721145 /* Info.plist */,
+			);
+			path = rongChatDemo1;
+			sourceTree = "<group>";
+		};
+		75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */,
+				75CC9CF41DB8F17800721145 /* Info.plist */,
+			);
+			path = rongChatDemo1Tests;
+			sourceTree = "<group>";
+		};
+		75CC9CFC1DB8F17800721145 /* rongChatDemo1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				75CC9CFD1DB8F17800721145 /* rongChatDemo1UITests.swift */,
+				75CC9CFF1DB8F17800721145 /* Info.plist */,
+			);
+			path = rongChatDemo1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75CC9CD91DB8F17700721145 /* rongChatDemo1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CC9D021DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1" */;
+			buildPhases = (
+				75CC9CD61DB8F17700721145 /* Sources */,
+				75CC9CD71DB8F17700721145 /* Frameworks */,
+				75CC9CD81DB8F17700721145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rongChatDemo1;
+			productName = rongChatDemo1;
+			productReference = 75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75CC9CED1DB8F17800721145 /* rongChatDemo1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CC9D051DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1Tests" */;
+			buildPhases = (
+				75CC9CEA1DB8F17800721145 /* Sources */,
+				75CC9CEB1DB8F17800721145 /* Frameworks */,
+				75CC9CEC1DB8F17800721145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75CC9CF01DB8F17800721145 /* PBXTargetDependency */,
+			);
+			name = rongChatDemo1Tests;
+			productName = rongChatDemo1Tests;
+			productReference = 75CC9CEE1DB8F17800721145 /* rongChatDemo1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75CC9CF81DB8F17800721145 /* rongChatDemo1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75CC9D081DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1UITests" */;
+			buildPhases = (
+				75CC9CF51DB8F17800721145 /* Sources */,
+				75CC9CF61DB8F17800721145 /* Frameworks */,
+				75CC9CF71DB8F17800721145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75CC9CFB1DB8F17800721145 /* PBXTargetDependency */,
+			);
+			name = rongChatDemo1UITests;
+			productName = rongChatDemo1UITests;
+			productReference = 75CC9CF91DB8F17800721145 /* rongChatDemo1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75CC9CD21DB8F17700721145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = vd;
+				TargetAttributes = {
+					75CC9CD91DB8F17700721145 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					75CC9CED1DB8F17800721145 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75CC9CD91DB8F17700721145;
+					};
+					75CC9CF81DB8F17800721145 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75CC9CD91DB8F17700721145;
+					};
+				};
+			};
+			buildConfigurationList = 75CC9CD51DB8F17700721145 /* Build configuration list for PBXProject "rongChatDemo1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75CC9CD11DB8F17700721145;
+			productRefGroup = 75CC9CDB1DB8F17800721145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75CC9CD91DB8F17700721145 /* rongChatDemo1 */,
+				75CC9CED1DB8F17800721145 /* rongChatDemo1Tests */,
+				75CC9CF81DB8F17800721145 /* rongChatDemo1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75CC9CD81DB8F17700721145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */,
+				75CC9CE51DB8F17800721145 /* Assets.xcassets in Resources */,
+				75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CEC1DB8F17800721145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CF71DB8F17800721145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75CC9CD61DB8F17700721145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CC9CE01DB8F17800721145 /* ViewController.swift in Sources */,
+				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CEA1DB8F17800721145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CC9CF31DB8F17800721145 /* rongChatDemo1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75CC9CF51DB8F17800721145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CC9CFE1DB8F17800721145 /* rongChatDemo1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75CC9CF01DB8F17800721145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CC9CD91DB8F17700721145 /* rongChatDemo1 */;
+			targetProxy = 75CC9CEF1DB8F17800721145 /* PBXContainerItemProxy */;
+		};
+		75CC9CFB1DB8F17800721145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75CC9CD91DB8F17700721145 /* rongChatDemo1 */;
+			targetProxy = 75CC9CFA1DB8F17800721145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75CC9CE11DB8F17800721145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CC9CE21DB8F17800721145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75CC9CE71DB8F17800721145 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75CC9D001DB8F17800721145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75CC9D011DB8F17800721145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75CC9D031DB8F17800721145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = rongChatDemo1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75CC9D041DB8F17800721145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = rongChatDemo1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		75CC9D061DB8F17800721145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = rongChatDemo1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rongChatDemo1.app/rongChatDemo1";
+			};
+			name = Debug;
+		};
+		75CC9D071DB8F17800721145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = rongChatDemo1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rongChatDemo1.app/rongChatDemo1";
+			};
+			name = Release;
+		};
+		75CC9D091DB8F17800721145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = rongChatDemo1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = rongChatDemo1;
+			};
+			name = Debug;
+		};
+		75CC9D0A1DB8F17800721145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = rongChatDemo1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = rongChatDemo1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75CC9CD51DB8F17700721145 /* Build configuration list for PBXProject "rongChatDemo1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CC9D001DB8F17800721145 /* Debug */,
+				75CC9D011DB8F17800721145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75CC9D021DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CC9D031DB8F17800721145 /* Debug */,
+				75CC9D041DB8F17800721145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75CC9D051DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CC9D061DB8F17800721145 /* Debug */,
+				75CC9D071DB8F17800721145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75CC9D081DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75CC9D091DB8F17800721145 /* Debug */,
+				75CC9D0A1DB8F17800721145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75CC9CD21DB8F17700721145 /* Project object */;
+}
