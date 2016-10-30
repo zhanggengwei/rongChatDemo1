@@ -1,0 +1,76 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - EZQRCodeScanner (1.0.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - iAppInfos (0.2.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.8)
+  - ODRefreshControl (1.2)
+  - RongCloudIMKit (2.7.3)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - UIView+FrameEx (0.0.1)
+  - WActionSheet (0.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.1)
+  - EZQRCodeScanner (~> 1.0.0)
+  - FMDB
+  - iAppInfos (~> 0.2.1)
+  - MagicalRecord (~> 2.3.0)
+  - Mantle (~> 2.0.6)
+  - Masonry (~> 0.6.1)
+  - MBProgressHUD (= 0.8)
+  - ODRefreshControl (~> 1.2)
+  - RongCloudIMKit (~> 2.7.3)
+  - SDWebImage (~> 3.7.1)
+  - UIView+FrameEx (~> 0.0.1)
+  - WActionSheet (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  EZQRCodeScanner: c0bfa24c478c81e0af729460b66c8cf502371d48
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  iAppInfos: 090ecd9a694be25968bbdbdbff97841b301a9107
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  RongCloudIMKit: 0b93700b17d224c7c213815b8a23a9c356fe20e2
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  UIView+FrameEx: ab0c53e158ef0621d7b0b0a26626e175ac17e471
+  WActionSheet: d940181cdbc9bfcea8edfe6f7dc707070166fc46
+
+PODFILE CHECKSUM: c121c6d3d147cd6d996ddc604075a1ed416b4942
+
+COCOAPODS: 1.0.1

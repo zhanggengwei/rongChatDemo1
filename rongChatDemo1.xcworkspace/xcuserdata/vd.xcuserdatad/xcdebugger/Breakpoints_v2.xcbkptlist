@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PPRequestManager.swift"
+            timestampString = "499487023.363327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "requestGetUserToken(phone:passWord:region:sucess:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rongChatDemo1/AppDelegate.swift"
+            timestampString = "499487188.872013"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PPRequestManager.swift"
+            timestampString = "499487193.075233"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "requestGetUserToken(phone:passWord:region:sucess:fail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rongChatDemo1.PPRequestManager.requestGetUserToken (phone : Swift.String, passWord : Swift.String, region : Swift.String, sucess : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; (), fail : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%20%20%E4%BB%A3%E7%A0%81/rongChatDemo1/PPRequestManager.swift"
+                  timestampString = "499488353.052788"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rongChatDemo1.PPRequestManager.(requestGetUserToken (phone : Swift.String, passWord : Swift.String, region : Swift.String, sucess : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; (), fail : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%20%20%E4%BB%A3%E7%A0%81/rongChatDemo1/PPRequestManager.swift"
+                  timestampString = "499488353.054479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PPRequestManager.swift"
+            timestampString = "499487231.025267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "requestGetUserToken(phone:passWord:region:sucess:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PPRequestManager.swift"
+            timestampString = "499487551.00401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "requestGetUserToken(phone:passWord:region:sucess:fail:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PPRequestManager.swift"
+            timestampString = "499487552.649843"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "requestGetUserToken(phone:passWord:region:sucess:fail:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rongChatDemo1.PPRequestManager.requestGetUserToken (phone : Swift.String, passWord : Swift.String, region : Swift.String, sucess : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; (), fail : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%20%20%E4%BB%A3%E7%A0%81/rongChatDemo1/PPRequestManager.swift"
+                  timestampString = "499488353.07178"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1707">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rongChatDemo1.PPRequestManager.(requestGetUserToken (phone : Swift.String, passWord : Swift.String, region : Swift.String, sucess : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; (), fail : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%20%20%E4%BB%A3%E7%A0%81/rongChatDemo1/PPRequestManager.swift"
+                  timestampString = "499488353.074765"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "474">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rongChatDemo1.PPRequestManager.(requestGetUserToken (phone : Swift.String, passWord : Swift.String, region : Swift.String, sucess : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; (), fail : (Swift.Optional&lt;__ObjC.NSDictionary&gt;) -&gt; ()) -&gt; ()).(closure #2)"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%20%20%E4%BB%A3%E7%A0%81/rongChatDemo1/PPRequestManager.swift"
+                  timestampString = "499488353.076773"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

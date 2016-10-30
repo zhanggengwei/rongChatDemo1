@@ -7,13 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */; };
+		75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */; };
+		75C39EC81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png */; };
+		75C39EC91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png */; };
+		75C39ECA1DC4897C0066E7B1 /* tabbar_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBA1DC4897C0066E7B1 /* tabbar_discover@2x.png */; };
+		75C39ECB1DC4897C0066E7B1 /* tabbar_discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBB1DC4897C0066E7B1 /* tabbar_discover@3x.png */; };
+		75C39ECC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png */; };
+		75C39ECD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png */; };
+		75C39ECE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png */; };
+		75C39ECF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EBF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png */; };
+		75C39ED01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png */; };
+		75C39ED11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png */; };
+		75C39ED21DC4897C0066E7B1 /* tabbar_me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC21DC4897C0066E7B1 /* tabbar_me@2x.png */; };
+		75C39ED31DC4897C0066E7B1 /* tabbar_me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC31DC4897C0066E7B1 /* tabbar_me@3x.png */; };
+		75C39ED41DC4897C0066E7B1 /* tabbar_meHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC41DC4897C0066E7B1 /* tabbar_meHL@2x.png */; };
+		75C39ED51DC4897C0066E7B1 /* tabbar_meHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EC51DC4897C0066E7B1 /* tabbar_meHL@3x.png */; };
+		75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39ED81DC4C55A0066E7B1 /* PPBaseViewController.swift */; };
+		75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39ED91DC4C55A0066E7B1 /* PPNavgationController.swift */; };
+		75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDA1DC4C55A0066E7B1 /* PPTabBarController.swift */; };
+		75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDB1DC4C55A0066E7B1 /* ViewController.swift */; };
+		75C39EEA1DC4C55A0066E7B1 /* PPDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDD1DC4C55A0066E7B1 /* PPDiscoverViewController.swift */; };
+		75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */; };
+		75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */; };
+		75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */; };
+		75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */; };
+		75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */; };
+		75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */; };
+		75C39EFB1DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF71DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png */; };
+		75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */; };
+		75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		75C39EFE1DC4C6D10066E7B1 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */; };
+		75C39F021DC4D7380066E7B1 /* PPContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F011DC4D7380066E7B1 /* PPContactListCell.swift */; };
+		75C39F061DC4DE330066E7B1 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F051DC4DE330066E7B1 /* PPTool.m */; };
+		75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F071DC511B30066E7B1 /* PPChatTools.swift */; };
+		75C39F0A1DC580C90066E7B1 /* PPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F091DC580C90066E7B1 /* PPRequestManager.swift */; };
+		75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */; };
 		75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDD1DB8F17800721145 /* AppDelegate.swift */; };
-		75CC9CE01DB8F17800721145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDF1DB8F17800721145 /* ViewController.swift */; };
 		75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE11DB8F17800721145 /* Main.storyboard */; };
-		75CC9CE51DB8F17800721145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE41DB8F17800721145 /* Assets.xcassets */; };
 		75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */; };
 		75CC9CF31DB8F17800721145 /* rongChatDemo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */; };
 		75CC9CFE1DB8F17800721145 /* rongChatDemo1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CFD1DB8F17800721145 /* rongChatDemo1UITests.swift */; };
+		75CC9D221DB9900600721145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9D211DB9900600721145 /* Assets.xcassets */; };
+		F3EDB0546B53203814A940CC /* libPods-rongChatDemo1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5077F98C5C4C5FCB0ABC2 /* libPods-rongChatDemo1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +70,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@2x.png"; sourceTree = "<group>"; };
+		75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@3x.png"; sourceTree = "<group>"; };
+		75C39EB81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contactsHL@2x.png"; sourceTree = "<group>"; };
+		75C39EB91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contactsHL@3x.png"; sourceTree = "<group>"; };
+		75C39EBA1DC4897C0066E7B1 /* tabbar_discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover@2x.png"; sourceTree = "<group>"; };
+		75C39EBB1DC4897C0066E7B1 /* tabbar_discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover@3x.png"; sourceTree = "<group>"; };
+		75C39EBC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discoverHL@2x.png"; sourceTree = "<group>"; };
+		75C39EBD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discoverHL@3x.png"; sourceTree = "<group>"; };
+		75C39EBE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainframe@2x.png"; sourceTree = "<group>"; };
+		75C39EBF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainframe@3x.png"; sourceTree = "<group>"; };
+		75C39EC01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainframeHL@2x.png"; sourceTree = "<group>"; };
+		75C39EC11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_mainframeHL@3x.png"; sourceTree = "<group>"; };
+		75C39EC21DC4897C0066E7B1 /* tabbar_me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_me@2x.png"; sourceTree = "<group>"; };
+		75C39EC31DC4897C0066E7B1 /* tabbar_me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_me@3x.png"; sourceTree = "<group>"; };
+		75C39EC41DC4897C0066E7B1 /* tabbar_meHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_meHL@2x.png"; sourceTree = "<group>"; };
+		75C39EC51DC4897C0066E7B1 /* tabbar_meHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_meHL@3x.png"; sourceTree = "<group>"; };
+		75C39ED81DC4C55A0066E7B1 /* PPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPBaseViewController.swift; sourceTree = "<group>"; };
+		75C39ED91DC4C55A0066E7B1 /* PPNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPNavgationController.swift; sourceTree = "<group>"; };
+		75C39EDA1DC4C55A0066E7B1 /* PPTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPTabBarController.swift; sourceTree = "<group>"; };
+		75C39EDB1DC4C55A0066E7B1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75C39EDD1DC4C55A0066E7B1 /* PPDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPDiscoverViewController.swift; sourceTree = "<group>"; };
+		75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPWeixiViewController.swift; sourceTree = "<group>"; };
+		75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMyViewController.swift; sourceTree = "<group>"; };
+		75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPLoginViewController.swift; sourceTree = "<group>"; };
+		75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPContactListViewController.swift; sourceTree = "<group>"; };
+		75C39EF01DC4C5720066E7B1 /* Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+		75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPColorUItil.swift; sourceTree = "<group>"; };
+		75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPImageUtil.swift; sourceTree = "<group>"; };
+		75C39EF31DC4C5720066E7B1 /* PPMachos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMachos.h; sourceTree = "<group>"; };
+		75C39EF71DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		75C39F011DC4D7380066E7B1 /* PPContactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPContactListCell.swift; sourceTree = "<group>"; };
+		75C39F031DC4DE330066E7B1 /* rongChatDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rongChatDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
+		75C39F041DC4DE330066E7B1 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
+		75C39F051DC4DE330066E7B1 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
+		75C39F071DC511B30066E7B1 /* PPChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPChatTools.swift; sourceTree = "<group>"; };
+		75C39F091DC580C90066E7B1 /* PPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRequestManager.swift; sourceTree = "<group>"; };
+		75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPUrlDef.swift; sourceTree = "<group>"; };
 		75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rongChatDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CC9CDD1DB8F17800721145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75CC9CDF1DB8F17800721145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75CC9CE21DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		75CC9CE41DB8F17800721145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75CC9CE71DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CC9CE91DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75CC9CEE1DB8F17800721145 /* rongChatDemo1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rongChatDemo1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +121,10 @@
 		75CC9CF91DB8F17800721145 /* rongChatDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rongChatDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CC9CFD1DB8F17800721145 /* rongChatDemo1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rongChatDemo1UITests.swift; sourceTree = "<group>"; };
 		75CC9CFF1DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75CC9D211DB9900600721145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../rongChatDemo1/Assets.xcassets; sourceTree = "<group>"; };
+		79C811EF116F63986BF50B28 /* Pods-rongChatDemo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongChatDemo1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1.debug.xcconfig"; sourceTree = "<group>"; };
+		916808A4CA9161BCA1DDC41F /* Pods-rongChatDemo1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongChatDemo1.release.xcconfig"; path = "Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1.release.xcconfig"; sourceTree = "<group>"; };
+		CAD5077F98C5C4C5FCB0ABC2 /* libPods-rongChatDemo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rongChatDemo1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EDB0546B53203814A940CC /* libPods-rongChatDemo1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +153,175 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50384DBF05BC23385E3C6FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5077F98C5C4C5FCB0ABC2 /* libPods-rongChatDemo1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633F67AB35D8784DA1247F8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79C811EF116F63986BF50B28 /* Pods-rongChatDemo1.debug.xcconfig */,
+				916808A4CA9161BCA1DDC41F /* Pods-rongChatDemo1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75C39EB41DC4897C0066E7B1 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EF61DC4C6D00066E7B1 /* LanchImage */,
+				75C39EB51DC4897C0066E7B1 /* Tabbar */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		75C39EB51DC4897C0066E7B1 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */,
+				75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */,
+				75C39EB81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png */,
+				75C39EB91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png */,
+				75C39EBA1DC4897C0066E7B1 /* tabbar_discover@2x.png */,
+				75C39EBB1DC4897C0066E7B1 /* tabbar_discover@3x.png */,
+				75C39EBC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png */,
+				75C39EBD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png */,
+				75C39EBE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png */,
+				75C39EBF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png */,
+				75C39EC01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png */,
+				75C39EC11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png */,
+				75C39EC21DC4897C0066E7B1 /* tabbar_me@2x.png */,
+				75C39EC31DC4897C0066E7B1 /* tabbar_me@3x.png */,
+				75C39EC41DC4897C0066E7B1 /* tabbar_meHL@2x.png */,
+				75C39EC51DC4897C0066E7B1 /* tabbar_meHL@3x.png */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		75C39ED61DC4C55A0066E7B1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EFF1DC4C7580066E7B1 /* LauchImageController */,
+				75CC9CE11DB8F17800721145 /* Main.storyboard */,
+				75C39ED71DC4C55A0066E7B1 /* baseViewController */,
+				75C39EDC1DC4C55A0066E7B1 /* 发现 */,
+				75C39EDE1DC4C55A0066E7B1 /* 微信 */,
+				75C39EE01DC4C55A0066E7B1 /* 我的 */,
+				75C39EE21DC4C55A0066E7B1 /* 登陆 */,
+				75C39EE41DC4C55A0066E7B1 /* 通讯录 */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		75C39ED71DC4C55A0066E7B1 /* baseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75C39ED81DC4C55A0066E7B1 /* PPBaseViewController.swift */,
+				75C39ED91DC4C55A0066E7B1 /* PPNavgationController.swift */,
+				75C39EDA1DC4C55A0066E7B1 /* PPTabBarController.swift */,
+				75C39EDB1DC4C55A0066E7B1 /* ViewController.swift */,
+			);
+			path = baseViewController;
+			sourceTree = "<group>";
+		};
+		75C39EDC1DC4C55A0066E7B1 /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EDD1DC4C55A0066E7B1 /* PPDiscoverViewController.swift */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		75C39EDE1DC4C55A0066E7B1 /* 微信 */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */,
+			);
+			path = "微信";
+			sourceTree = "<group>";
+		};
+		75C39EE01DC4C55A0066E7B1 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		75C39EE21DC4C55A0066E7B1 /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */,
+			);
+			path = "登陆";
+			sourceTree = "<group>";
+		};
+		75C39EE41DC4C55A0066E7B1 /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				75C39F001DC4D7150066E7B1 /* view */,
+				75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		75C39EEF1DC4C5720066E7B1 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EF01DC4C5720066E7B1 /* Header.pch */,
+				75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */,
+				75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */,
+				75C39EF31DC4C5720066E7B1 /* PPMachos.h */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		75C39EF61DC4C6D00066E7B1 /* LanchImage */ = {
+			isa = PBXGroup;
+			children = (
+				75C39EF71DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png */,
+				75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */,
+				75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */,
+				75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */,
+			);
+			path = LanchImage;
+			sourceTree = "<group>";
+		};
+		75C39EFF1DC4C7580066E7B1 /* LauchImageController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LauchImageController;
+			sourceTree = "<group>";
+		};
+		75C39F001DC4D7150066E7B1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				75C39F011DC4D7380066E7B1 /* PPContactListCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		75CC9CD11DB8F17700721145 = {
 			isa = PBXGroup;
 			children = (
+				75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */,
+				75C39F091DC580C90066E7B1 /* PPRequestManager.swift */,
+				75C39F071DC511B30066E7B1 /* PPChatTools.swift */,
+				75C39F041DC4DE330066E7B1 /* PPTool.h */,
+				75C39F051DC4DE330066E7B1 /* PPTool.m */,
+				75C39EB41DC4897C0066E7B1 /* resource */,
 				75CC9CDC1DB8F17800721145 /* rongChatDemo1 */,
 				75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */,
 				75CC9CFC1DB8F17800721145 /* rongChatDemo1UITests */,
 				75CC9CDB1DB8F17800721145 /* Products */,
+				633F67AB35D8784DA1247F8B /* Pods */,
+				50384DBF05BC23385E3C6FE0 /* Frameworks */,
+				75C39F031DC4DE330066E7B1 /* rongChatDemo1-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +338,9 @@
 		75CC9CDC1DB8F17800721145 /* rongChatDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				75C39EEF1DC4C5720066E7B1 /* tools */,
+				75C39ED61DC4C55A0066E7B1 /* UI */,
 				75CC9CDD1DB8F17800721145 /* AppDelegate.swift */,
-				75CC9CDF1DB8F17800721145 /* ViewController.swift */,
-				75CC9CE11DB8F17800721145 /* Main.storyboard */,
-				75CC9CE41DB8F17800721145 /* Assets.xcassets */,
 				75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */,
 				75CC9CE91DB8F17800721145 /* Info.plist */,
 			);
@@ -110,6 +350,7 @@
 		75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				75CC9D211DB9900600721145 /* Assets.xcassets */,
 				75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */,
 				75CC9CF41DB8F17800721145 /* Info.plist */,
 			);
@@ -132,9 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75CC9D021DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1" */;
 			buildPhases = (
+				4F4508B85302D9D0F35E0403 /* [CP] Check Pods Manifest.lock */,
 				75CC9CD61DB8F17700721145 /* Sources */,
 				75CC9CD71DB8F17700721145 /* Frameworks */,
 				75CC9CD81DB8F17700721145 /* Resources */,
+				54096A76088610A032CF15BB /* [CP] Embed Pods Frameworks */,
+				71D31CB8C0F1DB73FDD06271 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +437,8 @@
 				TargetAttributes = {
 					75CC9CD91DB8F17700721145 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R6B5BG54J2;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					75CC9CED1DB8F17800721145 = {
@@ -232,8 +478,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C39ECE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png in Resources */,
+				75C39ECB1DC4897C0066E7B1 /* tabbar_discover@3x.png in Resources */,
+				75C39ED01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png in Resources */,
+				75C39ED41DC4897C0066E7B1 /* tabbar_meHL@2x.png in Resources */,
+				75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */,
+				75C39ED51DC4897C0066E7B1 /* tabbar_meHL@3x.png in Resources */,
+				75C39EFB1DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png in Resources */,
 				75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */,
-				75CC9CE51DB8F17800721145 /* Assets.xcassets in Resources */,
+				75C39ED11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png in Resources */,
+				75CC9D221DB9900600721145 /* Assets.xcassets in Resources */,
+				75C39EC91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png in Resources */,
+				75C39ED21DC4897C0066E7B1 /* tabbar_me@2x.png in Resources */,
+				75C39ECA1DC4897C0066E7B1 /* tabbar_discover@2x.png in Resources */,
+				75C39ED31DC4897C0066E7B1 /* tabbar_me@3x.png in Resources */,
+				75C39EFE1DC4C6D10066E7B1 /* LaunchImage@2x.png in Resources */,
+				75C39ECC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png in Resources */,
+				75C39ECD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png in Resources */,
+				75C39EC81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png in Resources */,
+				75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */,
+				75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				75C39ECF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png in Resources */,
+				75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */,
 				75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +520,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F4508B85302D9D0F35E0403 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54096A76088610A032CF15BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D31CB8C0F1DB73FDD06271 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75CC9CD61DB8F17700721145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CC9CE01DB8F17800721145 /* ViewController.swift in Sources */,
+				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
+				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
+				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
+				75C39F021DC4D7380066E7B1 /* PPContactListCell.swift in Sources */,
+				75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */,
+				75C39F0A1DC580C90066E7B1 /* PPRequestManager.swift in Sources */,
+				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
+				75C39EEA1DC4C55A0066E7B1 /* PPDiscoverViewController.swift in Sources */,
+				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
+				75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */,
+				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
+				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
+				75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */,
+				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
+				75C39F061DC4DE330066E7B1 /* PPTool.m in Sources */,
+				75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */,
 				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +631,7 @@
 				75CC9CE21DB8F17800721145 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */ = {
@@ -408,24 +738,33 @@
 		};
 		75CC9D031DB8F17800721145 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C811EF116F63986BF50B28 /* Pods-rongChatDemo1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rongChatDemo1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		75CC9D041DB8F17800721145 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916808A4CA9161BCA1DDC41F /* Pods-rongChatDemo1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R6B5BG54J2;
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rongChatDemo1-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +842,7 @@
 				75CC9D041DB8F17800721145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75CC9D051DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +851,7 @@
 				75CC9D071DB8F17800721145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75CC9D081DB8F17800721145 /* Build configuration list for PBXNativeTarget "rongChatDemo1UITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +860,7 @@
 				75CC9D0A1DB8F17800721145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
