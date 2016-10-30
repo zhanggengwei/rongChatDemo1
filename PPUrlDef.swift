@@ -10,6 +10,7 @@ import UIKit
 
 class PPUrlDef: NSObject
 {
-
+//    /#define DemoServer @"http://api.sealtalk.im/" //线上正式环境
+    public let loginUrl:String = "http://api.sealtalk.im/user/login";
     
 }

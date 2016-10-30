@@ -50,7 +50,8 @@ class PPRequestManager: NSObject
         parms.setValue(region, forKey: "region")
         
         let requestManager:AFHTTPRequestOperationManager = AFHTTPRequestOperationManager.init(baseURL: NSURL.init(string: demoServer) as URL!);
-       
+     
+        
         requestManager.post(demoLoginUrl, parameters: parms, success: { (opearion, object) in
             print(opearion);
             print(object);

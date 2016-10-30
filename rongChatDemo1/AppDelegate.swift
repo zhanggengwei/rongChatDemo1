@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -29,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }) { (dict) in
                 
         };
+        
+        PPDateEngine.loginWithphone("18363070380", passWord: "123456", region: "86");
+        
         
         
         
