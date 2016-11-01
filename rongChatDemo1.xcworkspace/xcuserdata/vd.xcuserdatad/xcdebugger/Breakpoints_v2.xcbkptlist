@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PPDateEngine.m"
-            timestampString = "499498904.726116"
+            filePath = "PPHTTPManager.m"
+            timestampString = "499507407.373432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "+loginWithphone:passWord:region:"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-paramsWithQuery:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PPDateEngine.m"
-            timestampString = "499498904.726116"
+            filePath = "PPHTTPManager.m"
+            timestampString = "499507407.373432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "+loginWithphone:passWord:region:"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-descriptionWithPrefix:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

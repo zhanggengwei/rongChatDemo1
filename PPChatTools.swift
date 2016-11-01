@@ -81,7 +81,7 @@ class PPChatTools: NSObject,RCIMConnectionStatusDelegate,RCIMReceiveMessageDeleg
      error:(void (^)(RCConnectErrorCode status))errorBlock
      tokenIncorrect:(void (^)())tokenIncorrectBlock;
      */
-    func connectWithToken(token:String,sucessBlock:@escaping success,errorBlock: @escaping error,tokenIncorrectBlock:@escaping tokenIncorrect) -> Void
+   public func connectWithToken(token:String,sucessBlock:@escaping success,errorBlock: @escaping error,tokenIncorrectBlock:@escaping tokenIncorrect) -> Void
     {
 
         self.client?.connect(withToken: token, success:

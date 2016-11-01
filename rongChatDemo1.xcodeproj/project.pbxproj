@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */; };
 		75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */; };
 		75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */; };
 		75C39EC81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png */; };
@@ -46,6 +47,8 @@
 		75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F0E1DC59B4E0066E7B1 /* PPHTTPManager.m */; };
 		75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F111DC59C310066E7B1 /* PPDateEngine.m */; };
 		75C39F151DC5A5910066E7B1 /* PPHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */; };
+		75C39F181DC5E1750066E7B1 /* PPDataDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F171DC5E1750066E7B1 /* PPDataDef.m */; };
+		75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */; };
 		75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDD1DB8F17800721145 /* AppDelegate.swift */; };
 		75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE11DB8F17800721145 /* Main.storyboard */; };
 		75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */; };
@@ -73,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonTableViewCell.h; sourceTree = "<group>"; };
+		75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonTableViewCell.m; sourceTree = "<group>"; };
 		75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@2x.png"; sourceTree = "<group>"; };
 		75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@3x.png"; sourceTree = "<group>"; };
 		75C39EB81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contactsHL@2x.png"; sourceTree = "<group>"; };
@@ -119,6 +124,10 @@
 		75C39F111DC59C310066E7B1 /* PPDateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDateEngine.m; sourceTree = "<group>"; };
 		75C39F131DC5A5910066E7B1 /* PPHTTPRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPRequestSerializer.h; sourceTree = "<group>"; };
 		75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPRequestSerializer.m; sourceTree = "<group>"; };
+		75C39F161DC5E1750066E7B1 /* PPDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDataDef.h; sourceTree = "<group>"; };
+		75C39F171DC5E1750066E7B1 /* PPDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDataDef.m; sourceTree = "<group>"; };
+		75C39F191DC5E22C0066E7B1 /* PPHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPResponse.h; sourceTree = "<group>"; };
+		75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPResponse.m; sourceTree = "<group>"; };
 		75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rongChatDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CC9CDD1DB8F17800721145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CC9CE21DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,6 +186,15 @@
 				916808A4CA9161BCA1DDC41F /* Pods-rongChatDemo1.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		75B0FCB31DC8E2BD00B0ED9B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */,
+				75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		75C39EB41DC4897C0066E7B1 /* resource */ = {
@@ -256,6 +274,7 @@
 		75C39EE01DC4C55A0066E7B1 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				75B0FCB31DC8E2BD00B0ED9B /* view */,
 				75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */,
 			);
 			path = "我的";
@@ -318,6 +337,10 @@
 		75CC9CD11DB8F17700721145 = {
 			isa = PBXGroup;
 			children = (
+				75C39F191DC5E22C0066E7B1 /* PPHTTPResponse.h */,
+				75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */,
+				75C39F161DC5E1750066E7B1 /* PPDataDef.h */,
+				75C39F171DC5E1750066E7B1 /* PPDataDef.m */,
 				75C39F131DC5A5910066E7B1 /* PPHTTPRequestSerializer.h */,
 				75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */,
 				75C39F101DC59C310066E7B1 /* PPDateEngine.h */,
@@ -598,14 +621,17 @@
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */,
 				75C39EEA1DC4C55A0066E7B1 /* PPDiscoverViewController.swift in Sources */,
+				75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */,
 				75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
 				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
+				75C39F181DC5E1750066E7B1 /* PPDataDef.m in Sources */,
 				75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */,
 				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
 				75C39F061DC4DE330066E7B1 /* PPTool.m in Sources */,
+				75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */,
 				75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */,
 				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
 			);
@@ -761,9 +787,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.iosPoClientweixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rongChatDemo1-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -778,9 +805,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.soft.demo1.rongChatDemo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.popoteam.iosPoClientweixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rongChatDemo1-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PrefixHeader.pch">
+   </FileRef>
+   <FileRef
       location = "group:rongChatDemo1.xcodeproj">
    </FileRef>
    <FileRef
