@@ -11,23 +11,8 @@ import UIKit
 class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITableViewDataSource
 {
  
-
-
     private var tableView:UITableView! = nil
     private var indexArr:NSMutableArray! = nil
-    //memProperty
-//    var titlesArr:NSMutableArray? {
-//        didSet
-//        {
-//            _titleArr
-//        }
-//        willSet
-//        {
-//            
-//        }
-//        
-//        
-//    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -38,6 +23,8 @@ class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITa
         self.tableView.sectionIndexColor = UIColor.gray;
         
        // self.tableView.sectionIndexMinimumDisplayRowCount = 6;
+        let rightItem:UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "contacts_add_friend"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(PPContactListViewController.addFriend));
+        self.navigationItem.rightBarButtonItem = rightItem;
         
     
         // Do any additional setup after loading the view.
@@ -56,6 +43,9 @@ class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITa
         self.view.addSubview(self.tableView)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+    }
+    func addFriend() -> Void {
+        
     }
     
     func createData() -> Void

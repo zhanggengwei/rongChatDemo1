@@ -7,7 +7,9 @@
 #import <RongIMKit/RongIMKit.h>
 #import <AFNetworking/AFNetworking.h>
 #import "PPDateEngine.h"
-
+#import "PPPersonTableViewCell.h"
+#import "PPDataDef.h"
+#import "PPSetingViewController.h"
 
 
 

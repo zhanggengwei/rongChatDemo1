@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */; };
+		7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */; };
+		7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */; };
+		7504F1B61DCA0C310039FFB9 /* me_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1B01DCA0C310039FFB9 /* me_setting@2x.png */; };
+		7504F1B71DCA0C310039FFB9 /* MoreExpressionShops@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1B11DCA0C310039FFB9 /* MoreExpressionShops@3x.png */; };
+		7504F1B81DCA0C310039FFB9 /* setting_myQR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1B21DCA0C310039FFB9 /* setting_myQR@2x.png */; };
+		7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1BC1DCA1A8F0039FFB9 /* PPSetingViewController.m */; };
+		7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1BF1DCA1C960039FFB9 /* PPSettingCell.m */; };
+		7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */; };
+		7504F1C71DCA3C570039FFB9 /* contacts_add_friend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */; };
 		75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */; };
 		75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */; };
 		75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */; };
@@ -76,6 +86,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_collect@2x.png"; sourceTree = "<group>"; };
+		7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_money@2x.png"; sourceTree = "<group>"; };
+		7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_photo@2x.png"; sourceTree = "<group>"; };
+		7504F1B01DCA0C310039FFB9 /* me_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_setting@2x.png"; sourceTree = "<group>"; };
+		7504F1B11DCA0C310039FFB9 /* MoreExpressionShops@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoreExpressionShops@3x.png"; sourceTree = "<group>"; };
+		7504F1B21DCA0C310039FFB9 /* setting_myQR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_myQR@2x.png"; sourceTree = "<group>"; };
+		7504F1BB1DCA1A8F0039FFB9 /* PPSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSetingViewController.h; sourceTree = "<group>"; };
+		7504F1BC1DCA1A8F0039FFB9 /* PPSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSetingViewController.m; sourceTree = "<group>"; };
+		7504F1BE1DCA1C960039FFB9 /* PPSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSettingCell.h; sourceTree = "<group>"; };
+		7504F1BF1DCA1C960039FFB9 /* PPSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSettingCell.m; sourceTree = "<group>"; };
+		7504F1C31DCA3A280039FFB9 /* PPAccountSecurityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAccountSecurityViewController.h; sourceTree = "<group>"; };
+		7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAccountSecurityViewController.m; sourceTree = "<group>"; };
+		7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_friend@2x.png"; sourceTree = "<group>"; };
 		75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonTableViewCell.h; sourceTree = "<group>"; };
 		75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonTableViewCell.m; sourceTree = "<group>"; };
 		75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@2x.png"; sourceTree = "<group>"; };
@@ -188,11 +211,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7504F1AC1DCA0C310039FFB9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */,
+				7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */,
+				7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */,
+				7504F1B01DCA0C310039FFB9 /* me_setting@2x.png */,
+				7504F1B11DCA0C310039FFB9 /* MoreExpressionShops@3x.png */,
+				7504F1B21DCA0C310039FFB9 /* setting_myQR@2x.png */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		75B0FCB31DC8E2BD00B0ED9B /* view */ = {
 			isa = PBXGroup;
 			children = (
 				75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */,
 				75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */,
+				7504F1BE1DCA1C960039FFB9 /* PPSettingCell.h */,
+				7504F1BF1DCA1C960039FFB9 /* PPSettingCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -200,6 +238,8 @@
 		75C39EB41DC4897C0066E7B1 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */,
+				7504F1AC1DCA0C310039FFB9 /* Setting */,
 				75C39EF61DC4C6D00066E7B1 /* LanchImage */,
 				75C39EB51DC4897C0066E7B1 /* Tabbar */,
 			);
@@ -276,6 +316,10 @@
 			children = (
 				75B0FCB31DC8E2BD00B0ED9B /* view */,
 				75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */,
+				7504F1BB1DCA1A8F0039FFB9 /* PPSetingViewController.h */,
+				7504F1BC1DCA1A8F0039FFB9 /* PPSetingViewController.m */,
+				7504F1C31DCA3A280039FFB9 /* PPAccountSecurityViewController.h */,
+				7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -516,26 +560,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7504F1B71DCA0C310039FFB9 /* MoreExpressionShops@3x.png in Resources */,
+				7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */,
 				75C39ECE1DC4897C0066E7B1 /* tabbar_mainframe@2x.png in Resources */,
 				75C39ECB1DC4897C0066E7B1 /* tabbar_discover@3x.png in Resources */,
 				75C39ED01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png in Resources */,
+				7504F1B61DCA0C310039FFB9 /* me_setting@2x.png in Resources */,
 				75C39ED41DC4897C0066E7B1 /* tabbar_meHL@2x.png in Resources */,
 				75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */,
 				75C39ED51DC4897C0066E7B1 /* tabbar_meHL@3x.png in Resources */,
 				75C39EFB1DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png in Resources */,
 				75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */,
+				7504F1C71DCA3C570039FFB9 /* contacts_add_friend@2x.png in Resources */,
 				75C39ED11DC4897C0066E7B1 /* tabbar_mainframeHL@3x.png in Resources */,
 				75CC9D221DB9900600721145 /* Assets.xcassets in Resources */,
 				75C39EC91DC4897C0066E7B1 /* tabbar_contactsHL@3x.png in Resources */,
 				75C39ED21DC4897C0066E7B1 /* tabbar_me@2x.png in Resources */,
 				75C39ECA1DC4897C0066E7B1 /* tabbar_discover@2x.png in Resources */,
+				7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */,
 				75C39ED31DC4897C0066E7B1 /* tabbar_me@3x.png in Resources */,
 				75C39EFE1DC4C6D10066E7B1 /* LaunchImage@2x.png in Resources */,
 				75C39ECC1DC4897C0066E7B1 /* tabbar_discoverHL@2x.png in Resources */,
 				75C39ECD1DC4897C0066E7B1 /* tabbar_discoverHL@3x.png in Resources */,
 				75C39EC81DC4897C0066E7B1 /* tabbar_contactsHL@2x.png in Resources */,
 				75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */,
+				7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */,
 				75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				7504F1B81DCA0C310039FFB9 /* setting_myQR@2x.png in Resources */,
 				75C39ECF1DC4897C0066E7B1 /* tabbar_mainframe@3x.png in Resources */,
 				75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */,
 				75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */,
@@ -611,6 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
 				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
@@ -618,11 +670,13 @@
 				75C39F021DC4D7380066E7B1 /* PPContactListCell.swift in Sources */,
 				75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */,
 				75C39F0A1DC580C90066E7B1 /* PPRequestManager.swift in Sources */,
+				7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */,
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */,
 				75C39EEA1DC4C55A0066E7B1 /* PPDiscoverViewController.swift in Sources */,
 				75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */,
 				75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */,
+				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
