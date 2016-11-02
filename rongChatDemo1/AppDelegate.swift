@@ -32,10 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         };
         
         PPDateEngine.loginWithphone("18363070380", passWord: "123456", region: "86");
-        
-        
-        
-        
         return true
     }
 
@@ -69,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bar:UINavigationBar = UINavigationBar.appearance();
         bar.barTintColor = UIColor.init(colorLiteralRed: 0.1, green: 0.1, blue: 0.1, alpha: 0.9);
         bar.tintColor = UIColor.white;
-        bar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white];
+        bar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 17)];
     }
     func createTabbarController()
     {

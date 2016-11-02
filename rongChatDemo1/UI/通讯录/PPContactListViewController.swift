@@ -45,7 +45,9 @@ class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITa
         self.tableView.dataSource = self
     }
     func addFriend() -> Void {
-        
+        let controller:PPAddFriendViewController = PPAddFriendViewController.init();
+        controller.hidesBottomBarWhenPushed = true;
+        self.navigationController?.pushViewController(controller, animated: true);
     }
     
     func createData() -> Void

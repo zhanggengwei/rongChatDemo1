@@ -17,6 +17,7 @@
 		7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1BF1DCA1C960039FFB9 /* PPSettingCell.m */; };
 		7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */; };
 		7504F1C71DCA3C570039FFB9 /* contacts_add_friend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */; };
+		7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1C91DCA3D0F0039FFB9 /* PPAddFriendViewController.m */; };
 		75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */; };
 		75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */; };
 		75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */; };
@@ -99,6 +100,8 @@
 		7504F1C31DCA3A280039FFB9 /* PPAccountSecurityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAccountSecurityViewController.h; sourceTree = "<group>"; };
 		7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAccountSecurityViewController.m; sourceTree = "<group>"; };
 		7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_friend@2x.png"; sourceTree = "<group>"; };
+		7504F1C81DCA3D0F0039FFB9 /* PPAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddFriendViewController.h; sourceTree = "<group>"; };
+		7504F1C91DCA3D0F0039FFB9 /* PPAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddFriendViewController.m; sourceTree = "<group>"; };
 		75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonTableViewCell.h; sourceTree = "<group>"; };
 		75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonTableViewCell.m; sourceTree = "<group>"; };
 		75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@2x.png"; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 			children = (
 				75C39F001DC4D7150066E7B1 /* view */,
 				75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */,
+				7504F1C81DCA3D0F0039FFB9 /* PPAddFriendViewController.h */,
+				7504F1C91DCA3D0F0039FFB9 /* PPAddFriendViewController.m */,
 			);
 			path = "通讯录";
 			sourceTree = "<group>";
@@ -674,6 +679,7 @@
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */,
 				75C39EEA1DC4C55A0066E7B1 /* PPDiscoverViewController.swift in Sources */,
+				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
 				75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */,
 				75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */,
 				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
