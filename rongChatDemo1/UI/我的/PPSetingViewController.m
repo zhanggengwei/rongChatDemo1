@@ -9,6 +9,8 @@
 
 #import "PPSetingViewController.h"
 #import "PPSettingCell.h"
+#import "PPAccountSecurityViewController.h"
+
 @interface PPSetingViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -66,7 +68,7 @@
     }
     PPSettingCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPSettingCell"];
     [cell layoutContent:self.dataArr[index] textAligent:index==6 ?NSTextAlignmentCenter:NSTextAlignmentLeft];
-    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
     
     
@@ -98,7 +100,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+ 
+    if (indexPath.section ==0 && indexPath.row ==0) {
+        PPAccountSecurityViewController * controller = [PPAccountSecurityViewController new];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

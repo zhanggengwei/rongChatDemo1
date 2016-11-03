@@ -127,6 +127,7 @@ class PPMyViewController: PPBaseViewController ,UITableViewDelegate,UITableViewD
         if(indexPath.section == 3 && indexPath.row == 0)
         {
             let controller:PPSetingViewController = PPSetingViewController.init();
+            controller.hidesBottomBarWhenPushed = true;
             self.navigationController?.pushViewController(controller, animated:true)
         }
     }
