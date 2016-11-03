@@ -11,5 +11,6 @@
 #import "PPDataDef.h"
 #import "PPSetingViewController.h"
 #import "PPAddFriendViewController.h"
+#import "PPContactListCell.h"
 
 

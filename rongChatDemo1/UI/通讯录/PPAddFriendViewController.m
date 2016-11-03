@@ -6,9 +6,12 @@
 //  Copyright © 2016年 vd. All rights reserved.
 //
 
-NSArray* titleArr()=[@"",@""];
-
-
+NSArray * AddressBookTableTitles() {
+    return @[@"新的朋友",
+             @"群聊",
+             @"标签",
+             @"公众号"];
+};
 
 #import "PPAddFriendViewController.h"
 

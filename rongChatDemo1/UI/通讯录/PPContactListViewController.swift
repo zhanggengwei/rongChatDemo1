@@ -8,11 +8,18 @@
 
 import UIKit
 
+
 class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITableViewDataSource
 {
  
     private var tableView:UITableView! = nil
     private var indexArr:NSMutableArray! = nil
+    private var array:NSArray = [
+        "新的朋友","群聊","标签","公众号"];
+    private var imageArr:NSArray = ["plugins_FriendNotify","add_friend_icon_addgroup","Contact_icon_ContactTag","add_friend_icon_offical"]
+    private var contactArray:NSMutableDictionary! = nil;
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,6 +32,7 @@ class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITa
        // self.tableView.sectionIndexMinimumDisplayRowCount = 6;
         let rightItem:UIBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "contacts_add_friend"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(PPContactListViewController.addFriend));
         self.navigationItem.rightBarButtonItem = rightItem;
+        self.contactArray = NSMutableDictionary.init();
         
     
         // Do any additional setup after loading the view.
@@ -61,17 +69,37 @@ class PPContactListViewController: PPBaseViewController,UITableViewDelegate,UITa
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let  cell:PPContactListCell = tableView.dequeueReusableCell(withIdentifier: "PPContactListCell")! as! PPContactListCell;
-       
+        if(indexPath.section==0)
+        {
+            //- (void)setLeftIconImageNamed:(NSString *)imageName andRightContentLabel:(NSString *)content
+            let  imageName:String = imageArr.object(at: indexPath.row) as! String;
+            
+            let content:String = array.object(at: indexPath.row) as! String
+            
+            cell.setLeftIconImageNamed(imageName as String!, andRightContentLabel:content as String!)
+            
+        }
         return cell;
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        if(section==0)
+        {
+            return 4;
+        }
+        return self.contactArray.count;
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1 + self.contactArray.count;
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return [UITableViewIndexSearch,"1","2"];
         
     }
+    
+    
     
     
     

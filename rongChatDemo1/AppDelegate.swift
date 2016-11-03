@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*
          控制器name数组
          */
-        let  controllerArray = ["PPMyViewController","PPContactListViewController","PPMyViewController","PPMyViewController"]
+        let  controllerArray = ["PPWeixiViewController","PPContactListViewController","PPDiscoverViewController","PPMyViewController"]
         /*
          title数组
          */
