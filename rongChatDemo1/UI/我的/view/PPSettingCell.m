@@ -11,7 +11,7 @@
 
 @interface PPSettingCell ()
 @property (nonatomic,strong) UILabel * contentLabel;
-
+@property (nonatomic,strong) UILabel * rightLabel;
 @end
 
 @implementation PPSettingCell
@@ -47,11 +47,33 @@
         make.height.mas_equalTo(15);
         make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(10);
     }];
+    
+    
+    self.rightLabel = [UILabel new];
+    [self.contentView addSubview:self.contentLabel];
+    
+    [self.detailTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(-10);
+        make.centerY.mas_equalTo(self.contentView.mas_centerY);
+        make.width.mas_equalTo(60);
+        make.height.mas_equalTo(@16);
+    }];
+    self.detailTextLabel.textAlignment = NSTextAlignmentRight;
+    self.contentLabel.font = [UIFont systemFontOfSize:14];
+    self.detailTextLabel.textColor = [UIColor grayColor];
 }
 - (void)layoutContent:(NSString *)content textAligent:(NSTextAlignment)alignent
 {
     self.contentLabel.text = content;
     self.contentLabel.textAlignment = alignent;
+    
+}
+
+- (void)layoutContent:(NSString *)content textAligent:(NSTextAlignment)alignent andDetailText:(NSString *)text
+{
+    self.contentLabel.text = content;
+    self.contentLabel.textAlignment = alignent;
+    self.detailTextLabel.text = text;
     
 }
 

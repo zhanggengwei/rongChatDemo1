@@ -10,5 +10,6 @@
 
 @interface PPSettingCell : UITableViewCell
 - (void)layoutContent:(NSString *)content textAligent:(NSTextAlignment)alignent;
+- (void)layoutContent:(NSString *)content textAligent:(NSTextAlignment)alignent andDetailText:(NSString *)text;
 
 @end
