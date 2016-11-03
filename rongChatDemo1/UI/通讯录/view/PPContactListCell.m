@@ -47,7 +47,7 @@
     [self.contentView addSubview:self.contentLabel];
     
     [self.leftIconView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.mas_left).mas_offset(10);
+        make.left.mas_equalTo(self.mas_left).mas_offset(15);
         make.top.mas_equalTo(self.mas_top).mas_offset(10);
         make.bottom.mas_equalTo(self.mas_bottom).mas_offset(-10);
         make.width.mas_equalTo(self.frame.size.height - 20);

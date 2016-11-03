@@ -45,7 +45,7 @@
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
         make.width.mas_equalTo(self.frame.size.width - 20);
         make.height.mas_equalTo(15);
-        make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(10);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(15);
     }];
     
     
