@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400E6B181DCC783E00783F4F /* friendList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 400E6B171DCC783E00783F4F /* friendList.txt */; };
 		7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */; };
 		7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */; };
 		7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */; };
@@ -137,6 +138,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400E6B171DCC783E00783F4F /* friendList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = friendList.txt; sourceTree = "<group>"; };
 		7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_collect@2x.png"; sourceTree = "<group>"; };
 		7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_money@2x.png"; sourceTree = "<group>"; };
 		7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_photo@2x.png"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				7504F1AC1DCA0C310039FFB9 /* Setting */,
 				75C39EF61DC4C6D00066E7B1 /* LanchImage */,
 				75C39EB51DC4897C0066E7B1 /* Tabbar */,
+				400E6B171DCC783E00783F4F /* friendList.txt */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 				757083091DCB8063000148CB /* 1.png in Resources */,
 				75C39ED01DC4897C0066E7B1 /* tabbar_mainframeHL@2x.png in Resources */,
 				75D7DB851DCB6D070020020A /* Contact_icon_ContactTag@2x.png in Resources */,
+				400E6B181DCC783E00783F4F /* friendList.txt in Resources */,
 				757083301DCB8105000148CB /* ff_IconQRCode@2x.png in Resources */,
 				7570832B1DCB80EF000148CB /* Action_JD_mainMenu@2x.png in Resources */,
 				7504F1B61DCA0C310039FFB9 /* me_setting@2x.png in Resources */,
