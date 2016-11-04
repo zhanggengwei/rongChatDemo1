@@ -32,6 +32,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         };
         
         PPDateEngine.loginWithphone("18363070380", passWord: "123456", region: "86");
+       
+        //从一个本地项目资源中读取data.Json文件
+        let path: String = Bundle.main.path(forResource: "friendList", ofType: "txt")!
+        let nsUrl = NSURL(fileURLWithPath: path)
+        let  nsData: NSData = NSData(contentsOf: nsUrl as URL)!
+        
+ 
+        var json:Any! = nil;
+        
+    
+        do {
+            
+            json = try JSONSerialization.jsonObject(with: nsData as Data, options:JSONSerialization.ReadingOptions.mutableContainers);
+            
+            
+            
+        } catch {
+            
+            // deal with error
+        }
+        
+       // let jsonDic = jsonas!Dictionary<String;,Any>
+        
+    
+        
+        
+        
+        
+        print(json);
+        
         return true
     }
 
