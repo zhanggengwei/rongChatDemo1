@@ -7,15 +7,16 @@
 //
 
 #import "PPLoginTableViewCell.h"
+#import "UITextField+UITextField_WJ.h"
 
-@interface PPLoginTableViewCell ()
+@interface PPLoginTableViewCell ()<UITextFieldDelegate,WJTextFieldDelegate>
 @property (nonatomic,strong) UILabel * content;
 @property (nonatomic,strong) UILabel * leftLabel;
 @property (nonatomic,strong) UITextField * leftText;
 @property (nonatomic,strong) UITextField * rightText;
 @property (nonatomic,strong) UIImageView * lineImageView;
 @property (nonatomic,strong) UIImageView * topBottomImageView;
-
+@property (nonatomic,assign) PPLoginTableViewCellStyle style;
 
 @end
 
@@ -28,7 +29,7 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 
@@ -61,7 +62,7 @@
     [self.contentView addSubview:self.content];
     
     [self.content mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.leftLabel.mas_right).mas_offset(20);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(100);
         make.top.mas_equalTo(self.mas_top);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.right.mas_equalTo(self.mas_right);
@@ -95,14 +96,91 @@
     }];
     self.topBottomImageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
+    
+    self.rightText = [UITextField new];
+    [self.contentView addSubview:self.rightText];
+    
+    [self.rightText mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(100);
+        make.top.mas_equalTo(self.mas_top);
+        make.bottom.mas_equalTo(self.mas_bottom);
+        make.right.mas_equalTo(self.mas_right);
+        
+    }];
+    
+    self.leftText = [UITextField new];
+    [self.contentView addSubview:self.leftText];
+    
+    [self.leftText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.mas_left).mas_offset(10);
+        make.top.mas_equalTo(self.mas_top);
+        make.bottom.mas_equalTo(self.mas_bottom);
+        make.width.mas_equalTo(70);
+    }];
+    
+    self.leftText.font = [UIFont systemFontOfSize:15];
+    self.rightText.font = [UIFont systemFontOfSize:15];
+    self.leftText.WJDelegate = self;
+    
+    
+    
 }
 
-- (void)layoutLeftContent:(NSString *)left content:(NSString *)content
+- (void)layoutLeftContent:(NSString *)left content:(NSString *)content andStyle:(PPLoginTableViewCellStyle)style
 {
+    self.style = style;
     self.leftLabel.text = left;
     self.content.text = content;
+    
+    if(self.style == PPLoginTableViewCellDefault)
+    {
+        self.topBottomImageView.hidden = YES;
+        self.rightText.hidden = YES;
+        self.leftText.hidden = YES;
+    }else if (self.style == PPLoginTableViewCellTextField)
+    {
+        self.topBottomImageView.hidden = NO;
+        self.content.hidden = YES;
+        self.leftText.text = left;
+        self.rightText.placeholder = content;
+        self.leftLabel.hidden = YES;
+        self.leftText.hidden = NO;
+        
+    }else
+    {
+        self.leftText.hidden = YES;
+        self.leftLabel.hidden = NO;
+        self.content.hidden = YES;
+        self.rightText.hidden = NO;
+        self.leftLabel.text = left;
+        self.rightText.placeholder = content;
+        self.topBottomImageView.hidden = YES;
+    }
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range
+{
+    if(range.location>=1)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+    if(textField.text.length==1)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+- (void)textFieldDidDeleteBackward:(UITextField *)textField
+{
+    
+}
 
 
 

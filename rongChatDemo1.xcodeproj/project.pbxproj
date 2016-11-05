@@ -30,6 +30,7 @@
 		751894311DCD764500955C47 /* PPMachios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894301DCD764500955C47 /* PPMachios.swift */; };
 		751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894331DCE18A300955C47 /* PPLoginTableViewCell.m */; };
 		751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894361DCE242D00955C47 /* PPLoginViewController.m */; };
+		7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */; };
 		757082E31DCB7F8C000148CB /* ff_IconShake.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E01DCB7F8C000148CB /* ff_IconShake.png */; };
 		757082E41DCB7F8C000148CB /* ff_IconShake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */; };
 		757082E51DCB7F8C000148CB /* ff_IconShake@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */; };
@@ -175,6 +176,8 @@
 		751894331DCE18A300955C47 /* PPLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginTableViewCell.m; sourceTree = "<group>"; };
 		751894351DCE242D00955C47 /* PPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoginViewController.h; sourceTree = "<group>"; };
 		751894361DCE242D00955C47 /* PPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginViewController.m; sourceTree = "<group>"; };
+		751894381DCE420400955C47 /* UITextField+UITextField_WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+UITextField_WJ.h"; sourceTree = "<group>"; };
+		751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+UITextField_WJ.m"; sourceTree = "<group>"; };
 		757082E01DCB7F8C000148CB /* ff_IconShake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconShake.png; sourceTree = "<group>"; };
 		757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@2x.png"; sourceTree = "<group>"; };
 		757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@3x.png"; sourceTree = "<group>"; };
@@ -522,6 +525,8 @@
 				751894331DCE18A300955C47 /* PPLoginTableViewCell.m */,
 				751894351DCE242D00955C47 /* PPLoginViewController.h */,
 				751894361DCE242D00955C47 /* PPLoginViewController.m */,
+				751894381DCE420400955C47 /* UITextField+UITextField_WJ.h */,
+				751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */,
 			);
 			path = "登陆";
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 				751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */,
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
+				7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */,
 				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75D7DB8D1DCB71EE0020020A /* PPDiscoverViewController.swift in Sources */,

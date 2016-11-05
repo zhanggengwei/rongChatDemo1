@@ -63,10 +63,35 @@
    
     [self.tableView registerClass:[PPLoginTableViewCell class] forCellReuseIdentifier:@"PPLoginTableViewCell"];
     self.tableView.contentInset = UIEdgeInsetsMake(-64.0f,.0f, 0.0f, 0.0f);
-    
     self.tableView.tableFooterView = [UIView new];
-    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    UIButton * loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.footerView addSubview:loginBtn];
+    
+    [loginBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.footerView.mas_top).mas_offset(10);
+        make.left.mas_equalTo(self.footerView.mas_left).mas_offset(31);
+        make.right.mas_equalTo(self.footerView.mas_right).mas_offset(-31);
+        make.height.mas_equalTo(35);
+    }];
+    loginBtn.backgroundColor = [UIColor yellowColor];
+    
+    UIButton * emailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [self.footerView addSubview:emailBtn];
+    
+    [emailBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.footerView.mas_left);
+        make.right.mas_equalTo(self.footerView.mas_right);
+        make.top.mas_equalTo(loginBtn.mas_bottom).mas_offset(10);
+        make.height.mas_equalTo(16);
+    }];
+    [emailBtn setTitleColor:[UIColor colorWithRed:0 green:167 blue:0 alpha:1] forState:UIControlStateNormal];
+    [emailBtn setTitle:@"通过短信验证码登陆" forState:UIControlStateNormal];
+    emailBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    
+    
     
 }
 
@@ -86,13 +111,19 @@
     
     if(indexPath.row==0)
     {
-        [cell layoutLeftContent:@"国家/地区" content:@"中国"];
+        [cell layoutLeftContent:@"国家/地区" content:@"中国" andStyle:PPLoginTableViewCellDefault];
+        
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }else if(indexPath.row == 1)
+    {
+        [cell layoutLeftContent:@"+86" content:@"请填写手机号码" andStyle:PPLoginTableViewCellTextField];
+        
+       
     }else
     {
-        [cell layoutLeftContent:@"" content:@""];
-        cell.accessoryType = UITableViewCellAccessoryNone;
+         [cell layoutLeftContent:@"密码" content:@"请填写密码" andStyle:PPLoginTableViewCellNotLine];
     }
+     cell.accessoryType = UITableViewCellAccessoryNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -117,14 +148,14 @@
     return  60;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-//{
-//    return  0;
-//}
-//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-//{
-//    return  nil;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return  80;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return  self.footerView;
+}
 
 /*
 #pragma mark - Navigation

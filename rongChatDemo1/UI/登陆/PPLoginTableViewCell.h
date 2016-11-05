@@ -19,7 +19,7 @@ typedef enum : NSUInteger {
 
 @property (nonatomic,assign,readonly) PPLoginTableViewCellStyle style;
 
-- (void)layoutLeftContent:(NSString *)left content:(NSString *)content;
+- (void)layoutLeftContent:(NSString *)left content:(NSString *)content andStyle:(PPLoginTableViewCellStyle)style;
 
 
 
