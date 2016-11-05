@@ -20,7 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         
-        self.createTabbarController()
+        //self.createTabbarController()
+        
+        self.window?.rootViewController =  UINavigationController(rootViewController:PPLoginViewController.init());
+        
+        
+            //PPLoginViewController.init();
+        
         window?.makeKeyAndVisible()
         
         self.createNavBarStyle();
@@ -91,9 +97,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func createNavBarStyle()
     {
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
-        
         let bar:UINavigationBar = UINavigationBar.appearance();
         bar.barTintColor = UIColor.init(colorLiteralRed: 0.1, green: 0.1, blue: 0.1, alpha: 0.9);
+        bar.shadowImage = UIImage.init();
         bar.tintColor = UIColor.white;
         bar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 17)];
     }

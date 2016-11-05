@@ -19,6 +19,15 @@
 		7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */; };
 		7504F1C71DCA3C570039FFB9 /* contacts_add_friend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */; };
 		7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7504F1C91DCA3D0F0039FFB9 /* PPAddFriendViewController.m */; };
+		751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894161DCD6A4D00955C47 /* PPDataDef.m */; };
+		751894251DCD6A4D00955C47 /* PPDateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894181DCD6A4D00955C47 /* PPDateEngine.m */; };
+		751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941A1DCD6A4D00955C47 /* PPHTTPManager.m */; };
+		751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */; };
+		751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */; };
+		751894291DCD6A4D00955C47 /* PPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */; };
+		7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894211DCD6A4D00955C47 /* PPChatTools.swift */; };
+		7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894231DCD6A4D00955C47 /* PPTool.m */; };
+		751894311DCD764500955C47 /* PPMachios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894301DCD764500955C47 /* PPMachios.swift */; };
 		757082E31DCB7F8C000148CB /* ff_IconShake.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E01DCB7F8C000148CB /* ff_IconShake.png */; };
 		757082E41DCB7F8C000148CB /* ff_IconShake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */; };
 		757082E51DCB7F8C000148CB /* ff_IconShake@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */; };
@@ -91,15 +100,7 @@
 		75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */; };
 		75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */; };
 		75C39EFE1DC4C6D10066E7B1 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */; };
-		75C39F061DC4DE330066E7B1 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F051DC4DE330066E7B1 /* PPTool.m */; };
-		75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F071DC511B30066E7B1 /* PPChatTools.swift */; };
-		75C39F0A1DC580C90066E7B1 /* PPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F091DC580C90066E7B1 /* PPRequestManager.swift */; };
 		75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */; };
-		75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F0E1DC59B4E0066E7B1 /* PPHTTPManager.m */; };
-		75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F111DC59C310066E7B1 /* PPDateEngine.m */; };
-		75C39F151DC5A5910066E7B1 /* PPHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */; };
-		75C39F181DC5E1750066E7B1 /* PPDataDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F171DC5E1750066E7B1 /* PPDataDef.m */; };
-		75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */; };
 		75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDD1DB8F17800721145 /* AppDelegate.swift */; };
 		75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE11DB8F17800721145 /* Main.storyboard */; };
 		75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */; };
@@ -154,6 +155,21 @@
 		7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contacts_add_friend@2x.png"; sourceTree = "<group>"; };
 		7504F1C81DCA3D0F0039FFB9 /* PPAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddFriendViewController.h; sourceTree = "<group>"; };
 		7504F1C91DCA3D0F0039FFB9 /* PPAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddFriendViewController.m; sourceTree = "<group>"; };
+		751894151DCD6A4D00955C47 /* PPDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDataDef.h; sourceTree = "<group>"; };
+		751894161DCD6A4D00955C47 /* PPDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDataDef.m; sourceTree = "<group>"; };
+		751894171DCD6A4D00955C47 /* PPDateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDateEngine.h; sourceTree = "<group>"; };
+		751894181DCD6A4D00955C47 /* PPDateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDateEngine.m; sourceTree = "<group>"; };
+		751894191DCD6A4D00955C47 /* PPHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPManager.h; sourceTree = "<group>"; };
+		7518941A1DCD6A4D00955C47 /* PPHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPManager.m; sourceTree = "<group>"; };
+		7518941B1DCD6A4D00955C47 /* PPHTTPRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPRequestSerializer.h; sourceTree = "<group>"; };
+		7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPRequestSerializer.m; sourceTree = "<group>"; };
+		7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPResponse.h; sourceTree = "<group>"; };
+		7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPResponse.m; sourceTree = "<group>"; };
+		7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRequestManager.swift; sourceTree = "<group>"; };
+		751894211DCD6A4D00955C47 /* PPChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPChatTools.swift; sourceTree = "<group>"; };
+		751894221DCD6A4D00955C47 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
+		751894231DCD6A4D00955C47 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
+		751894301DCD764500955C47 /* PPMachios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMachios.swift; sourceTree = "<group>"; };
 		757082E01DCB7F8C000148CB /* ff_IconShake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconShake.png; sourceTree = "<group>"; };
 		757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@2x.png"; sourceTree = "<group>"; };
 		757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@3x.png"; sourceTree = "<group>"; };
@@ -230,21 +246,7 @@
 		75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		75C39F031DC4DE330066E7B1 /* rongChatDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rongChatDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
-		75C39F041DC4DE330066E7B1 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
-		75C39F051DC4DE330066E7B1 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
-		75C39F071DC511B30066E7B1 /* PPChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPChatTools.swift; sourceTree = "<group>"; };
-		75C39F091DC580C90066E7B1 /* PPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRequestManager.swift; sourceTree = "<group>"; };
 		75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPUrlDef.swift; sourceTree = "<group>"; };
-		75C39F0D1DC59B4E0066E7B1 /* PPHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPManager.h; sourceTree = "<group>"; };
-		75C39F0E1DC59B4E0066E7B1 /* PPHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPManager.m; sourceTree = "<group>"; };
-		75C39F101DC59C310066E7B1 /* PPDateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDateEngine.h; sourceTree = "<group>"; };
-		75C39F111DC59C310066E7B1 /* PPDateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDateEngine.m; sourceTree = "<group>"; };
-		75C39F131DC5A5910066E7B1 /* PPHTTPRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPRequestSerializer.h; sourceTree = "<group>"; };
-		75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPRequestSerializer.m; sourceTree = "<group>"; };
-		75C39F161DC5E1750066E7B1 /* PPDataDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPDataDef.h; sourceTree = "<group>"; };
-		75C39F171DC5E1750066E7B1 /* PPDataDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPDataDef.m; sourceTree = "<group>"; };
-		75C39F191DC5E22C0066E7B1 /* PPHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPResponse.h; sourceTree = "<group>"; };
-		75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPResponse.m; sourceTree = "<group>"; };
 		75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rongChatDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CC9CDD1DB8F17800721145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CC9CE21DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -328,6 +330,34 @@
 				7504F1B21DCA0C310039FFB9 /* setting_myQR@2x.png */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		751894141DCD6A4D00955C47 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				751894151DCD6A4D00955C47 /* PPDataDef.h */,
+				751894161DCD6A4D00955C47 /* PPDataDef.m */,
+				751894171DCD6A4D00955C47 /* PPDateEngine.h */,
+				751894181DCD6A4D00955C47 /* PPDateEngine.m */,
+				751894191DCD6A4D00955C47 /* PPHTTPManager.h */,
+				7518941A1DCD6A4D00955C47 /* PPHTTPManager.m */,
+				7518941B1DCD6A4D00955C47 /* PPHTTPRequestSerializer.h */,
+				7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */,
+				7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */,
+				7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */,
+				7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		751894201DCD6A4D00955C47 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				751894211DCD6A4D00955C47 /* PPChatTools.swift */,
+				751894221DCD6A4D00955C47 /* PPTool.h */,
+				751894231DCD6A4D00955C47 /* PPTool.m */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		757082DF1DCB7F28000148CB /* discover */ = {
@@ -541,21 +571,10 @@
 		75CC9CD11DB8F17700721145 = {
 			isa = PBXGroup;
 			children = (
-				75C39F191DC5E22C0066E7B1 /* PPHTTPResponse.h */,
-				75C39F1A1DC5E22C0066E7B1 /* PPHTTPResponse.m */,
-				75C39F161DC5E1750066E7B1 /* PPDataDef.h */,
-				75C39F171DC5E1750066E7B1 /* PPDataDef.m */,
-				75C39F131DC5A5910066E7B1 /* PPHTTPRequestSerializer.h */,
-				75C39F141DC5A5910066E7B1 /* PPHTTPRequestSerializer.m */,
-				75C39F101DC59C310066E7B1 /* PPDateEngine.h */,
-				75C39F111DC59C310066E7B1 /* PPDateEngine.m */,
+				751894141DCD6A4D00955C47 /* manager */,
+				751894201DCD6A4D00955C47 /* tools */,
 				75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */,
-				75C39F091DC580C90066E7B1 /* PPRequestManager.swift */,
-				75C39F0D1DC59B4E0066E7B1 /* PPHTTPManager.h */,
-				75C39F0E1DC59B4E0066E7B1 /* PPHTTPManager.m */,
-				75C39F071DC511B30066E7B1 /* PPChatTools.swift */,
-				75C39F041DC4DE330066E7B1 /* PPTool.h */,
-				75C39F051DC4DE330066E7B1 /* PPTool.m */,
+				751894301DCD764500955C47 /* PPMachios.swift */,
 				75C39EB41DC4897C0066E7B1 /* resource */,
 				75CC9CDC1DB8F17800721145 /* rongChatDemo1 */,
 				75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */,
@@ -891,31 +910,32 @@
 			files = (
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
+				751894311DCD764500955C47 /* PPMachios.swift in Sources */,
 				75D7DB771DCB68FA0020020A /* PPContactListCell.m in Sources */,
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
 				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
-				75C39F151DC5A5910066E7B1 /* PPHTTPRequestSerializer.m in Sources */,
 				75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */,
-				75C39F0A1DC580C90066E7B1 /* PPRequestManager.swift in Sources */,
 				7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */,
+				751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */,
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
-				75C39F0F1DC59B4E0066E7B1 /* PPHTTPManager.m in Sources */,
 				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
-				75C39F1B1DC5E22C0066E7B1 /* PPHTTPResponse.m in Sources */,
-				75C39F121DC59C310066E7B1 /* PPDateEngine.m in Sources */,
 				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75D7DB8D1DCB71EE0020020A /* PPDiscoverViewController.swift in Sources */,
-				75C39F081DC511B30066E7B1 /* PPChatTools.swift in Sources */,
+				751894291DCD6A4D00955C47 /* PPRequestManager.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
 				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
-				75C39F181DC5E1750066E7B1 /* PPDataDef.m in Sources */,
+				751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */,
+				751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */,
 				75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */,
+				7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */,
+				751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */,
 				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
-				75C39F061DC4DE330066E7B1 /* PPTool.m in Sources */,
 				75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */,
 				75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */,
 				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
+				751894251DCD6A4D00955C47 /* PPDateEngine.m in Sources */,
+				7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
