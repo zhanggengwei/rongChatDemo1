@@ -65,6 +65,8 @@ class PPLoginViewController: PPBaseViewController,UITableViewDelegate,UITableVie
         self.headerView.text = "使用手机号码登陆";
         self.headerView.textAlignment = NSTextAlignment.center;
         
+        self.footerView = UIView.init(frame:CGRect(x:0,y:0,width:PPMachios.SCREEN_WIDTH,height:0));
+        
         self.tableView = UITableView.init(frame: self.view.bounds, style: UITableViewStyle.plain)
         self.view.addSubview(self.tableView)
         self.tableView.delegate = self;
@@ -91,7 +93,7 @@ class PPLoginViewController: PPBaseViewController,UITableViewDelegate,UITableVie
         return self.headerView;
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil;
+        return self.footerView;
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
