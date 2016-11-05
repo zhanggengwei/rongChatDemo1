@@ -28,6 +28,8 @@
 		7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894211DCD6A4D00955C47 /* PPChatTools.swift */; };
 		7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894231DCD6A4D00955C47 /* PPTool.m */; };
 		751894311DCD764500955C47 /* PPMachios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894301DCD764500955C47 /* PPMachios.swift */; };
+		751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894331DCE18A300955C47 /* PPLoginTableViewCell.m */; };
+		751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894361DCE242D00955C47 /* PPLoginViewController.m */; };
 		757082E31DCB7F8C000148CB /* ff_IconShake.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E01DCB7F8C000148CB /* ff_IconShake.png */; };
 		757082E41DCB7F8C000148CB /* ff_IconShake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */; };
 		757082E51DCB7F8C000148CB /* ff_IconShake@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */; };
@@ -92,7 +94,6 @@
 		75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDB1DC4C55A0066E7B1 /* ViewController.swift */; };
 		75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */; };
 		75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */; };
-		75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */; };
 		75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */; };
 		75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */; };
 		75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */; };
@@ -170,6 +171,10 @@
 		751894221DCD6A4D00955C47 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
 		751894231DCD6A4D00955C47 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
 		751894301DCD764500955C47 /* PPMachios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMachios.swift; sourceTree = "<group>"; };
+		751894321DCE18A300955C47 /* PPLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoginTableViewCell.h; sourceTree = "<group>"; };
+		751894331DCE18A300955C47 /* PPLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginTableViewCell.m; sourceTree = "<group>"; };
+		751894351DCE242D00955C47 /* PPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoginViewController.h; sourceTree = "<group>"; };
+		751894361DCE242D00955C47 /* PPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginViewController.m; sourceTree = "<group>"; };
 		757082E01DCB7F8C000148CB /* ff_IconShake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconShake.png; sourceTree = "<group>"; };
 		757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@2x.png"; sourceTree = "<group>"; };
 		757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@3x.png"; sourceTree = "<group>"; };
@@ -235,7 +240,6 @@
 		75C39EDB1DC4C55A0066E7B1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPWeixiViewController.swift; sourceTree = "<group>"; };
 		75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMyViewController.swift; sourceTree = "<group>"; };
-		75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPLoginViewController.swift; sourceTree = "<group>"; };
 		75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPContactListViewController.swift; sourceTree = "<group>"; };
 		75C39EF01DC4C5720066E7B1 /* Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
 		75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPColorUItil.swift; sourceTree = "<group>"; };
@@ -514,7 +518,10 @@
 		75C39EE21DC4C55A0066E7B1 /* 登陆 */ = {
 			isa = PBXGroup;
 			children = (
-				75C39EE31DC4C55A0066E7B1 /* PPLoginViewController.swift */,
+				751894321DCE18A300955C47 /* PPLoginTableViewCell.h */,
+				751894331DCE18A300955C47 /* PPLoginTableViewCell.m */,
+				751894351DCE242D00955C47 /* PPLoginViewController.h */,
+				751894361DCE242D00955C47 /* PPLoginViewController.m */,
 			);
 			path = "登陆";
 			sourceTree = "<group>";
@@ -910,6 +917,7 @@
 			files = (
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
+				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,
 				751894311DCD764500955C47 /* PPMachios.swift in Sources */,
 				75D7DB771DCB68FA0020020A /* PPContactListCell.m in Sources */,
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
@@ -924,6 +932,7 @@
 				75D7DB8D1DCB71EE0020020A /* PPDiscoverViewController.swift in Sources */,
 				751894291DCD6A4D00955C47 /* PPRequestManager.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
+				751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */,
 				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
 				751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */,
 				751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */,
@@ -932,7 +941,6 @@
 				751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */,
 				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
 				75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */,
-				75C39EED1DC4C55A0066E7B1 /* PPLoginViewController.swift in Sources */,
 				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
 				751894251DCD6A4D00955C47 /* PPDateEngine.m in Sources */,
 				7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */,

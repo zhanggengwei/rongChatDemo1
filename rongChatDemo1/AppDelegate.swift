@@ -23,13 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //self.createTabbarController()
         
         self.window?.rootViewController =  UINavigationController(rootViewController:PPLoginViewController.init());
-        
-        
-            //PPLoginViewController.init();
-        
         window?.makeKeyAndVisible()
-        
         self.createNavBarStyle();
+       
         let manager:PPRequestManager=PPRequestManager.shareManager;
         manager.requestGetUserToken(phone: "18363070380", passWord: "123456", region: "86", sucess: { (dict) in
             
