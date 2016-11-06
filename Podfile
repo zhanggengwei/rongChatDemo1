@@ -13,6 +13,7 @@ pod 'SDWebImage', '~> 3.7.1'
 pod 'MagicalRecord', '~> 2.3.0'
 pod 'Mantle', '~> 2.0.6'
 pod 'FMDB'
+pod 'YYWebImage', '~> 1.0.5'
 
 # UI
 pod 'MBProgressHUD', '0.8'
@@ -21,7 +22,7 @@ pod 'ODRefreshControl', '~> 1.2'
 pod 'WActionSheet', '~> 0.0.3'
 pod 'EZQRCodeScanner', '~> 1.0.0'
 pod 'RongCloudIMKit', '~> 2.7.3'
- pod 'UIView+FrameEx', '~> 0.0.1'
+pod 'UIView+FrameEx', '~> 0.0.1'
 end
 
 target ‘rongChatDemo1’ do

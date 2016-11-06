@@ -31,6 +31,7 @@
 		751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894331DCE18A300955C47 /* PPLoginTableViewCell.m */; };
 		751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894361DCE242D00955C47 /* PPLoginViewController.m */; };
 		7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */; };
+		7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518943C1DCEAE3700955C47 /* PPRegisterViewController.m */; };
 		757082E31DCB7F8C000148CB /* ff_IconShake.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E01DCB7F8C000148CB /* ff_IconShake.png */; };
 		757082E41DCB7F8C000148CB /* ff_IconShake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */; };
 		757082E51DCB7F8C000148CB /* ff_IconShake@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */; };
@@ -178,6 +179,8 @@
 		751894361DCE242D00955C47 /* PPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginViewController.m; sourceTree = "<group>"; };
 		751894381DCE420400955C47 /* UITextField+UITextField_WJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+UITextField_WJ.h"; sourceTree = "<group>"; };
 		751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+UITextField_WJ.m"; sourceTree = "<group>"; };
+		7518943B1DCEAE3700955C47 /* PPRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPRegisterViewController.h; sourceTree = "<group>"; };
+		7518943C1DCEAE3700955C47 /* PPRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPRegisterViewController.m; sourceTree = "<group>"; };
 		757082E01DCB7F8C000148CB /* ff_IconShake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconShake.png; sourceTree = "<group>"; };
 		757082E11DCB7F8C000148CB /* ff_IconShake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@2x.png"; sourceTree = "<group>"; };
 		757082E21DCB7F8C000148CB /* ff_IconShake@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconShake@3x.png"; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 				751894361DCE242D00955C47 /* PPLoginViewController.m */,
 				751894381DCE420400955C47 /* UITextField+UITextField_WJ.h */,
 				751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */,
+				7518943B1DCEAE3700955C47 /* PPRegisterViewController.h */,
+				7518943C1DCEAE3700955C47 /* PPRegisterViewController.m */,
 			);
 			path = "登陆";
 			sourceTree = "<group>";
@@ -920,6 +925,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */,
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
 				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,

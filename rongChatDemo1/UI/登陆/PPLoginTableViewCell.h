@@ -14,10 +14,18 @@ typedef enum : NSUInteger {
     PPLoginTableViewCellNotLine
 } PPLoginTableViewCellStyle;
 
+@protocol PPLoginTableViewCellDelegate <NSObject>
+
+- (void)loginActionPassWord:(NSString *)passWord;
+
+
+@end
+
 
 @interface PPLoginTableViewCell : UITableViewCell
 
 @property (nonatomic,assign,readonly) PPLoginTableViewCellStyle style;
+@property (nonatomic,weak) id<PPLoginTableViewCellDelegate>delegate;
 
 - (void)layoutLeftContent:(NSString *)left content:(NSString *)content andStyle:(PPLoginTableViewCellStyle)style;
 

@@ -51,7 +51,7 @@
     [self.contentView addSubview:self.leftLabel];
     
     [self.leftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.mas_left).mas_offset(10);
+        make.left.mas_equalTo(self.mas_left).mas_offset(20);
         make.top.mas_equalTo(self.mas_top);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.width.mas_equalTo(70);
@@ -62,7 +62,7 @@
     [self.contentView addSubview:self.content];
     
     [self.content mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(100);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(110);
         make.top.mas_equalTo(self.mas_top);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.right.mas_equalTo(self.mas_right);
@@ -102,7 +102,7 @@
     
     [self.rightText mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(100);
+        make.left.mas_equalTo(self.contentView.mas_left).mas_offset(110);
         make.top.mas_equalTo(self.mas_top);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.right.mas_equalTo(self.mas_right);
@@ -113,7 +113,7 @@
     [self.contentView addSubview:self.leftText];
     
     [self.leftText mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.mas_left).mas_offset(10);
+        make.left.mas_equalTo(self.mas_left).mas_offset(20);
         make.top.mas_equalTo(self.mas_top);
         make.bottom.mas_equalTo(self.mas_bottom);
         make.width.mas_equalTo(70);
@@ -122,6 +122,8 @@
     self.leftText.font = [UIFont systemFontOfSize:15];
     self.rightText.font = [UIFont systemFontOfSize:15];
     self.leftText.WJDelegate = self;
+    //self.rightText.delegate = self;
+    
     
     
     
@@ -138,6 +140,7 @@
         self.topBottomImageView.hidden = YES;
         self.rightText.hidden = YES;
         self.leftText.hidden = YES;
+        self.rightText.delegate = nil;
     }else if (self.style == PPLoginTableViewCellTextField)
     {
         self.topBottomImageView.hidden = NO;
@@ -146,7 +149,10 @@
         self.rightText.placeholder = content;
         self.leftLabel.hidden = YES;
         self.leftText.hidden = NO;
-        
+        self.rightText.secureTextEntry = NO;
+        self.rightText.keyboardType = UIKeyboardTypeNumberPad;
+        self.rightText.enablesReturnKeyAutomatically = NO;
+        self.rightText.delegate = nil;
     }else
     {
         self.leftText.hidden = YES;
@@ -156,6 +162,12 @@
         self.leftLabel.text = left;
         self.rightText.placeholder = content;
         self.topBottomImageView.hidden = YES;
+        self.rightText.secureTextEntry = YES;
+        self.rightText.keyboardType = UIKeyboardTypeDefault;
+        self.rightText.returnKeyType = UIReturnKeyGo;
+        self.rightText.enablesReturnKeyAutomatically = YES;
+        self.rightText.delegate = self;
+
     }
 }
 
@@ -175,6 +187,15 @@
         return YES;
     }
     return NO;
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([self.delegate respondsToSelector:@selector(loginActionPassWord:)])
+    {
+        [self.delegate loginActionPassWord:self.rightText.text];
+        
+    }
+    return YES;
 }
 
 - (void)textFieldDidDeleteBackward:(UITextField *)textField

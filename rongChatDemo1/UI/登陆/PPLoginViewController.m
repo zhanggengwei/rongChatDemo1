@@ -24,7 +24,8 @@
     self.item = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction:)];
 
     self.navigationItem.leftBarButtonItem = self.item;
-    self.item.tintColor = [UIColor colorWithRed:0 green:200 blue:0 alpha:1];
+    self.item.tintColor = [UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1];
+    
     [self createUI];
     [self createLoginNavBarStryle];
     
@@ -49,7 +50,7 @@
     
     self.headerView = [[UILabel alloc]initWithFrame:CGRectMake(0, 0,self.view.frame.size.width, 0)];
     self.headerView.font = [UIFont systemFontOfSize:18];
-    self.headerView.text = @"使用手机号码登陆";
+    self.headerView.text = @"使用手机号码登录";
     self.headerView.textAlignment = NSTextAlignmentCenter;
     self.footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, PPMachios.SCREEN_WIDTH, 0)];
     
@@ -75,7 +76,10 @@
         make.right.mas_equalTo(self.footerView.mas_right).mas_offset(-31);
         make.height.mas_equalTo(35);
     }];
-    loginBtn.backgroundColor = [UIColor yellowColor];
+    loginBtn.backgroundColor = [UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1];
+    loginBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [loginBtn setTitle:@"登录" forState:UIControlStateDisabled];
+    loginBtn.enabled = NO;
     
     UIButton * emailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -87,7 +91,8 @@
         make.top.mas_equalTo(loginBtn.mas_bottom).mas_offset(10);
         make.height.mas_equalTo(16);
     }];
-    [emailBtn setTitleColor:[UIColor colorWithRed:0 green:167 blue:0 alpha:1] forState:UIControlStateNormal];
+    //142, 148, 165
+    [emailBtn setTitleColor:[UIColor colorWithRed:142/255.0 green:148/255.0 blue:165/255.0 alpha:1] forState:UIControlStateNormal];
     [emailBtn setTitle:@"通过短信验证码登陆" forState:UIControlStateNormal];
     emailBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     
@@ -155,6 +160,12 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     return  self.footerView;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    self.editing = YES;
+    
 }
 
 /*

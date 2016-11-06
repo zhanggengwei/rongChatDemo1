@@ -45,7 +45,7 @@ NSString * const WJTextFieldDidDeleteBackwardNotification = @"com.whojun.textfie
 }
 
 - (void)wj_deleteBackward {
-    if(self.text.length==1)
+    if([self.text isEqualToString:@"+"])
     {
         return;
     }
