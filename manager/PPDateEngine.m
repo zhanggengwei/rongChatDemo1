@@ -14,16 +14,16 @@
 
 #define ContentType @"application/json"
 #define kPPUrlHttp @"http://api.sealtalk.im/"
-//login
 #define kPPUrlLoginUrl [NSString stringWithFormat:@"%@user/login",kPPUrlHttp]
-//regisiter
-
 #define kPPUrlRegisiter [NSString stringWithFormat:@"%@user/regisiter",kPPUrlHttp]
-//friends
 #define kPPUrlFriendsList [NSString stringWithFormat:@"%@friends",kPPUrlHttp]
 //detail
 //friendship/%@/profile
 #define kPPUrlProfile(friendId) [NSString stringWithFormat:@"%@friendship/%@/profile",kPPUrlHttp,friendId]
+
+#define kPPSendVirtifyCode [NSString stringWithFormat:@"%@user/send_code",kPPUrlHttp]
+
+//user/send_code
 
 //userInfo
 
@@ -37,34 +37,33 @@
 #define kPPUrlGetVersions [NSString stringWithFormat:@"%@misc/client_version",kPPUrlHttp]
 
 @implementation PPDateEngine
-+ (void)loginWithphone:(NSString *)phone passWord:(NSString *)passWord region:(NSString *)region
+
++(instancetype)manager
 {
-    
-    //PPHTTPManager * manager = [PPHTTPManager manager];
-    PPHTTPManager *manager =
-    [PPHTTPManager manager];
-    
-    /*
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes =
-    [NSSet setWithObjects:ContentType, nil];
-   
-    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html",nil];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    
-    manager.requestSerializer.HTTPShouldHandleCookies = YES;
-     */
+    static dispatch_once_t token;
+    static PPDateEngine * manager;
+    dispatch_once(&token, ^{
+        manager = [self new];
+        
+    });
+    return manager;
+}
+
+- (void)_completeWithResponse:(PPHTTPResponse *)aResponse block:(PPResponseBlock())aResponseBlock
+{
+    if (aResponseBlock) {
+        aResponseBlock(aResponse);
+    }
+}
+- (void)loginWithWithResponse:(PPResponseBlock())aResponseBlock Phone:(NSString *)phone passWord:(NSString *)passWord region:(NSString *)region
+{
+
+    PPHTTPManager *manager = [PPHTTPManager manager];
     NSDictionary * dict = @{
                             @"region" : region,
                             @"phone" : phone,
                             @"password" : passWord};
-  
-    
-    NSLog(@"loginURL == %@",kPPUrlLoginUrl);
-    
-    //user/login
     [manager POST:kPPUrlLoginUrl parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        //NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
         NSError * error;
         PPUserInfoTokenResponse * response = [MTLJSONAdapter modelOfClass:[PPUserInfoTokenResponse class] fromJSONDictionary:responseObject error:&error];
         NSString * token = ((PPTokenDef *)(response.result)).token;
@@ -75,17 +74,13 @@
             
         } errorBlock:^(RCConnectErrorCode code) {
             NSLog(@"code ==%d",code);
-            
-            
+        
         } tokenIncorrectBlock:^{
             
         }];
-        
-        
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@",error);
-        
+        PPHTTPResponse *response = [PPHTTPResponse responseWithError:error];
+        [self _completeWithResponse:response block:aResponseBlock];
         
     }];
     
@@ -113,7 +108,7 @@
     
 }
 
-+ (void)regisiterWithResponse:(PPResponseBlock())aResponseBlock  userName:(NSString *)userName verficationToken:(NSString *)token passWord:(NSString *)passWord
+- (void)regisiterWithResponse:(PPResponseBlock())aResponseBlock  userName:(NSString *)userName verficationToken:(NSString *)token passWord:(NSString *)passWord
 
 {
     
@@ -139,14 +134,9 @@
  }
  */
 
-+(void)requsetWithResponse:(PPResponseBlock())aResponseBlock
-{
-    
-}
-
 
 //获取用户详细资料
-+ (void)getFriendDetailsByID:(NSString *)friendId
+- (void)getFriendDetailsByID:(NSString *)friendId
                      success:(void (^)(id response))success
                      failure:(void (^)(NSError *err))failure
 {
@@ -161,7 +151,7 @@
 }
 
 //设置好友备注
-+ (void)setFriendDisplayName:(NSString *)friendId
+- (void)setFriendDisplayName:(NSString *)friendId
                  displayName:(NSString *)displayName
                      success:(void (^)(id response))success
                      failure:(void (^)(NSError *err))failure {
@@ -179,7 +169,7 @@
 }
 
 //获取版本信息
-+ (void)getVersionsuccess:(void (^)(id response))success
+- (void)getVersionsuccess:(void (^)(id response))success
                   failure:(void (^)(NSError *err))failure
 {
     
@@ -192,5 +182,10 @@
 
 }
 
+- (void)sendVerifyWithResponse:(PPResponseBlock())aResponseBlock Code:(NSString *)phone;
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    
+}
 
 @end

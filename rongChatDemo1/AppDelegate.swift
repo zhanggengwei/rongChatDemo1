@@ -33,7 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         };
         
-        PPDateEngine.loginWithphone("18363070380", passWord: "123456", region: "86");
+//        PPDateEngine.manager().loginWithphone("18363070380", passWord: "123456", region: "86");
+        
+        PPDateEngine.manager().loginWith(response: { (response) in
+            
+            
+            }, phone: "18363070380", passWord: "123456", region: "86");
        
         //从一个本地项目资源中读取data.Json文件
         let path: String = Bundle.main.path(forResource: "friendList", ofType: "txt")!
@@ -54,13 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // deal with error
         }
-        
-       // let jsonDic = jsonas!Dictionary<String;,Any>
-        
-    
-        
-        
-        
+
         
         print(json);
         
