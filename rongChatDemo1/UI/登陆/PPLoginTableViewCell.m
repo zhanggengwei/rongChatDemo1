@@ -125,6 +125,7 @@
     //self.rightText.delegate = self;
     
     
+    [self.rightText addTarget:self action:@selector(textChange:) forControlEvents:UIControlEventEditingChanged];
     
     
 }
@@ -152,7 +153,7 @@
         self.rightText.secureTextEntry = NO;
         self.rightText.keyboardType = UIKeyboardTypeNumberPad;
         self.rightText.enablesReturnKeyAutomatically = NO;
-        self.rightText.delegate = nil;
+        self.rightText.delegate = self;
     }else
     {
         self.leftText.hidden = YES;
@@ -171,37 +172,40 @@
     }
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range
-{
-    if(range.location>=1)
-    {
-        return YES;
-    }
-    return NO;
-}
-
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
-{
-    if(textField.text.length==1)
-    {
-        return YES;
-    }
-    return NO;
-}
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if([self.delegate respondsToSelector:@selector(loginActionPassWord:)])
+    if([self.delegate respondsToSelector:@selector(loginActionPassWord:style:)])
     {
-        [self.delegate loginActionPassWord:self.rightText.text];
+        [self.delegate loginActionPassWord:self.rightText.text style:PPLoginTableViewCellNotLine];
+        
         
     }
     return YES;
+}
+
+- (void)textChange:(UITextField *)field
+{
+    if(self.style == PPLoginTableViewCellTextField)
+    {
+        if(field.text.length>11)
+        {
+            field.text = [field.text substringToIndex:11];
+            return;
+        }
+    }
+    if([self.delegate respondsToSelector:@selector(textFieldChange:style:)])
+    {
+        [self.delegate textFieldChange:field.text style:self.style];
+        
+    }
 }
 
 - (void)textFieldDidDeleteBackward:(UITextField *)textField
 {
     
 }
+
+
 
 
 

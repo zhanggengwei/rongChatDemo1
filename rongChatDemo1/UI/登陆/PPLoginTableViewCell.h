@@ -16,7 +16,10 @@ typedef enum : NSUInteger {
 
 @protocol PPLoginTableViewCellDelegate <NSObject>
 
-- (void)loginActionPassWord:(NSString *)passWord;
+- (void)loginActionPassWord:(NSString *)passWord style:(PPLoginTableViewCellStyle)astyle;
+
+- (void)textFieldChange:(NSString *)text style:(PPLoginTableViewCellStyle)astyle;
+
 
 
 @end

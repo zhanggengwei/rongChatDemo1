@@ -11,11 +11,14 @@
 #import "rongChatDemo1-swift.h"
 #import <UIImage+YYWebImage.h>
 
-@interface PPLoginViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface PPLoginViewController ()<UITableViewDelegate,UITableViewDataSource,PPLoginTableViewCellDelegate>
 @property (nonatomic,strong) UITableView * tableView;
 @property (nonatomic,strong) UILabel * headerView;
 @property (nonatomic,strong) UIView * footerView;
 @property (nonatomic,strong) UIBarButtonItem * item;
+@property (nonatomic,strong) NSString * acount;
+@property (nonatomic,strong) NSString * passWord;
+@property (nonatomic,strong) UIButton * loginBtn;
 @end
 
 @implementation PPLoginViewController
@@ -23,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.item = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction:)];
-
+    
     self.navigationItem.leftBarButtonItem = self.item;
     self.item.tintColor = [UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1];
     
@@ -62,7 +65,7 @@
     self.tableView.dataSource = self;
     
     self.tableView.backgroundColor = [UIColor whiteColor];
-   
+    
     [self.tableView registerClass:[PPLoginTableViewCell class] forCellReuseIdentifier:@"PPLoginTableViewCell"];
     self.tableView.contentInset = UIEdgeInsetsMake(-64.0f,.0f, 0.0f, 0.0f);
     self.tableView.tableFooterView = [UIView new];
@@ -81,10 +84,10 @@
     [loginBtn setBackgroundImage:[UIImage yy_imageWithColor:[UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1]] forState:UIControlStateNormal];
     
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [loginBtn setTitle:@"登录" forState:UIControlStateDisabled];
+    [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.enabled = NO;
     [loginBtn addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
-    
+    self.loginBtn = loginBtn;
     UIButton * emailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [self.footerView addSubview:emailBtn];
@@ -127,12 +130,13 @@
     {
         [cell layoutLeftContent:@"+86" content:@"请填写手机号码" andStyle:PPLoginTableViewCellTextField];
         
-       
+        
     }else
     {
-         [cell layoutLeftContent:@"密码" content:@"请填写密码" andStyle:PPLoginTableViewCellNotLine];
+        [cell layoutLeftContent:@"密码" content:@"请填写密码" andStyle:PPLoginTableViewCellNotLine];
     }
-     cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.delegate = self;
+    cell.accessoryType = UITableViewCellAccessoryNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
@@ -177,14 +181,32 @@
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loginActionPassWord:(NSString *)passWord style:(PPLoginTableViewCellStyle)astyle
+{
+    
 }
-*/
+
+- (void)textFieldChange:(NSString *)text style:(PPLoginTableViewCellStyle)astyle
+{
+    if(astyle == PPLoginTableViewCellTextField)
+    {
+        self.acount = text;
+        //帐号
+        
+    }else if (astyle == PPLoginTableViewCellNotLine)
+    {
+        //密码
+        self.passWord = text;
+        
+    }
+    if (self.acount.length>=11&&self.passWord.length>=1)
+    {
+        self.loginBtn.enabled = YES;
+    }else
+    {
+        self.loginBtn.enabled = NO;
+    }
+}
+
 
 @end
