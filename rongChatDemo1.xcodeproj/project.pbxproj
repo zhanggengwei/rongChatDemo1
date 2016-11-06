@@ -73,6 +73,7 @@
 		7570832F1DCB8105000148CB /* ff_IconQRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832C1DCB8105000148CB /* ff_IconQRCode.png */; };
 		757083301DCB8105000148CB /* ff_IconQRCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832D1DCB8105000148CB /* ff_IconQRCode@2x.png */; };
 		757083311DCB8105000148CB /* ff_IconQRCode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832E1DCB8105000148CB /* ff_IconQRCode@3x.png */; };
+		75A7C8ED1DCED20E0090D892 /* kPPObserverDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */; };
 		75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */; };
 		75C39EC61DC4897C0066E7B1 /* tabbar_contacts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */; };
 		75C39EC71DC4897C0066E7B1 /* tabbar_contacts@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EB71DC4897C0066E7B1 /* tabbar_contacts@3x.png */; };
@@ -222,6 +223,8 @@
 		7570832C1DCB8105000148CB /* ff_IconQRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconQRCode.png; sourceTree = "<group>"; };
 		7570832D1DCB8105000148CB /* ff_IconQRCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconQRCode@2x.png"; sourceTree = "<group>"; };
 		7570832E1DCB8105000148CB /* ff_IconQRCode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconQRCode@3x.png"; sourceTree = "<group>"; };
+		75A7C8EB1DCED20E0090D892 /* kPPObserverDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kPPObserverDef.h; sourceTree = "<group>"; };
+		75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kPPObserverDef.m; sourceTree = "<group>"; };
 		75B0FCB61DC8E62C00B0ED9B /* PPPersonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonTableViewCell.h; sourceTree = "<group>"; };
 		75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonTableViewCell.m; sourceTree = "<group>"; };
 		75C39EB61DC4897C0066E7B1 /* tabbar_contacts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_contacts@2x.png"; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */,
 				7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */,
 				7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */,
+				75A7C8EB1DCED20E0090D892 /* kPPObserverDef.h */,
+				75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 				751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */,
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
+				75A7C8ED1DCED20E0090D892 /* kPPObserverDef.m in Sources */,
 				7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */,
 				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,

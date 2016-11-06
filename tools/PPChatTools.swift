@@ -123,6 +123,12 @@ class PPChatTools: NSObject,RCIMConnectionStatusDelegate,RCIMReceiveMessageDeleg
         
         
     }
+    func initRCIM() -> Void {
+        //#define RONGCLOUD_IM_APPKEY @"n19jmcy59f1q9"
+        
+        RCIM.shared().initWithAppKey("n19jmcy59f1q9");
+        
+    }
    
 
 }
