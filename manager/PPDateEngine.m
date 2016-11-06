@@ -294,6 +294,7 @@
 - (void)requestUploadImageToken:(PPResponseBlock())aResponseBlock
 {
     PPHTTPManager * manager = [PPHTTPManager manager];
+    
     [manager POST:kPPUrlUploadImageToken parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -306,6 +307,8 @@
     //进行 图片的上传  
     
     PPHTTPManager * manager = [PPHTTPManager manager];
+    
+    
     
     
 }
