@@ -26,3 +26,21 @@
 
 @end
 
+@interface PPUserBase : PPDataDef
+@property (nonatomic,strong) NSString * indexId;
+@property (nonatomic,strong) NSString * nickname;
+@property (nonatomic,strong) NSString * phone;
+@property (nonatomic,strong) NSString * portraitUri;
+@property (nonatomic,strong) NSString * region;
+
+@end
+
+@interface PPUserBaseInfo : PPDataDef
+@property (nonatomic,strong) NSString * displayName;
+@property (nonatomic,strong) NSString * message;
+@property (nonatomic,strong) NSString * updatedAt;
+@property (nonatomic,assign) NSInteger  status;
+@property (nonatomic,strong) PPUserBase * user;
+
+@end
+

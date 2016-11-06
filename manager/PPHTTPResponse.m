@@ -28,3 +28,12 @@
 }
 
 @end
+
+@implementation PPUserFriendListResponse
+
++ (NSValueTransformer *)resultJSONTransformer
+{
+    
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[PPUserBaseInfo class]];
+}
+@end

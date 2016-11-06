@@ -22,6 +22,9 @@
 
 @interface PPUserInfoTokenResponse : PPHTTPResponse
 
-
 @end
 
+
+@interface PPUserFriendListResponse : PPHTTPResponse
+
+@end

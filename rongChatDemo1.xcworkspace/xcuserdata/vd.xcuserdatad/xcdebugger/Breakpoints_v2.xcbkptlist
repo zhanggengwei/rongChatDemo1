@@ -42,13 +42,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "manager/PPDateEngine.m"
-            timestampString = "500094407.162566"
+            timestampString = "500109307.934799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-loginWithWithResponse:Phone:passWord:region:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "manager/PPDateEngine.m"
+            timestampString = "500109297.919952"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-loginWithWithResponse:Phone:passWord:region:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__60-[PPDateEngine loginWithWithResponse:Phone:passWord:region:]_block_invoke"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%E4%BB%A3%E7%A0%81/rongChatDemo1/manager/PPDateEngine.m"
+                  timestampString = "500110081.158215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "417">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__60-[PPDateEngine loginWithWithResponse:Phone:passWord:region:]_block_invoke_2"
+                  moduleName = "rongChatDemo1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vd/Desktop/ios%E4%BB%A3%E7%A0%81/rongChatDemo1/manager/PPDateEngine.m"
+                  timestampString = "500110081.16053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

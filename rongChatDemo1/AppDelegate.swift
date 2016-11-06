@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PPChatTools.shared.initRCIM();
             
         
-        
+        print(NSHomeDirectory())
         
         //self.createTabbarController()
         

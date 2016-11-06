@@ -23,6 +23,11 @@
 
 #define kPPSendVirtifyCode [NSString stringWithFormat:@"%@user/send_code",kPPUrlHttp]
 
+//friendship/all
+
+#define kPPGetAllFriendsList [NSString stringWithFormat:@"%@friendship/all",kPPUrlHttp]
+
+
 //user/send_code
 
 //userInfo
@@ -68,7 +73,11 @@
         PPUserInfoTokenResponse * response = [MTLJSONAdapter modelOfClass:[PPUserInfoTokenResponse class] fromJSONDictionary:responseObject error:&error];
         NSString * token = ((PPTokenDef *)(response.result)).token;
         [self _completeWithResponse:response block:aResponseBlock];
-        
+        if(response.code.integerValue == kPPResponseSucessCode){
+            [self getFriendListResponse:^(id aTaskResponse) {
+                
+            }];
+        }
         [[PPChatTools shared]connectWithTokenWithToken:token sucessBlock:^(NSString * _Nullable content) {
             
             NSLog(@"%@",content);
@@ -186,6 +195,22 @@
 - (void)sendVerifyWithResponse:(PPResponseBlock())aResponseBlock Code:(NSString *)phone;
 {
     PPHTTPManager * manager = [PPHTTPManager manager];
+    
+}
+
+- (void)getFriendListResponse:(PPResponseBlock())aResponseBlock
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPGetAllFriendsList parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSError * error;
+        PPUserFriendListResponse * response = [MTLJSONAdapter modelOfClass:[PPUserFriendListResponse class] fromJSONDictionary:responseObject error:&error];
+        
+        
+        NSLog(@"%@",responseObject);
+
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
     
 }
 

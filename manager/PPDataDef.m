@@ -23,3 +23,15 @@
 
 @implementation PPPersonal
 @end
+
+@implementation PPUserBase
+
+@end
+
+@implementation PPUserBaseInfo
+
++(NSValueTransformer *)userJSONTransformer
+{
+    return [MTLJSONAdapter dictionaryTransformerWithModelClass:[PPUserBase class]];
+}
+@end

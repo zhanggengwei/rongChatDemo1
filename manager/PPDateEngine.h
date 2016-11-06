@@ -22,6 +22,7 @@
 - (void)sendVerifyWithResponse:(PPResponseBlock())aResponseBlock Code:(NSString *)phone;
 
 
+- (void)getFriendListResponse:(PPResponseBlock())aResponseBlock;
 
 
 

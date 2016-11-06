@@ -48,8 +48,6 @@
 -(void)createLoginNavBarStryle
 {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-    UINavigationBar *  bar = [UINavigationBar appearance];
-    bar.barTintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.clipsToBounds = YES;
 }
 
@@ -61,16 +59,14 @@
     self.headerView.textAlignment = NSTextAlignmentCenter;
     self.footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, PPMachios.SCREEN_WIDTH, 0)];
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,64,PPMachios.SCREEN_WIDTH, PPMachios.SCREEN_HEIGHT) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,64,PPMachios.SCREEN_WIDTH, PPMachios.SCREEN_HEIGHT - 64) style:UITableViewStyleGrouped];
     
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
     self.tableView.backgroundColor = [UIColor whiteColor];
-    
     [self.tableView registerClass:[PPLoginTableViewCell class] forCellReuseIdentifier:@"PPLoginTableViewCell"];
-    self.tableView.contentInset = UIEdgeInsetsMake(-64.0f,.0f, 0.0f, 0.0f);
+    self.tableView.contentInset = UIEdgeInsetsMake(-64.0,.0f, 0.0f, 0.0f);
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
