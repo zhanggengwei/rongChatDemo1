@@ -23,6 +23,7 @@ pod 'WActionSheet', '~> 0.0.3'
 pod 'EZQRCodeScanner', '~> 1.0.0'
 pod 'RongCloudIMKit', '~> 2.7.3'
 pod 'UIView+FrameEx', '~> 0.0.1'
+pod 'SFHFKeychainUtils', '~> 0.0.1'
 end
 
 target ‘rongChatDemo1’ do
