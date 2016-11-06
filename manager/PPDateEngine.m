@@ -44,6 +44,35 @@
 // 获取image token user/get_image_token
 
 #define kPPUrlUploadImageToken [NSString stringWithFormat:@"%@user/get_image_token",kPPUrlHttp]
+//user/blacklist
+#define kPPUrlBlackUserList [NSString stringWithFormat:@"%@user/blacklist",kPPUrlHttp]
+//user/add_to_blacklist
+#define kPPUrlAddFriendBlackList [NSString stringWithFormat:@"%@user/add_to_blacklist",kPPUrlHttp]
+
+//user/remove_from_blacklist
+#define kPPUrlDeleteFriendBlackList [NSString stringWithFormat:@"%@user/remove_from_blacklist",kPPUrlHttp]
+//user/groups
+#define kPPUrlGetAllGroups [NSString stringWithFormat:@"%@user/groups",kPPUrlHttp]
+
+#define kPPUrlGetGroupId(groupID) [NSString stringWithFormat:@"%@group/%@",kPPUrlHttp,groupID]
+//members
+#define kPPUrlGetGroupMember(groupID) [NSString stringWithFormat:@"%@group/%@/members",kPPUrlHttp,groupID]
+///group/join
+#define kPPUrlJoinGroup [NSString stringWithFormat:@"%@group/join",kPPUrlHttp]
+///group/add
+#define kPPUrlInviteUserGroup [NSString stringWithFormat:@"%@group/add",kPPUrlHttp]
+//group/kick
+#define kPPUrlKickGroup [NSString stringWithFormat:@"%@group/kick",kPPUrlHttp]
+//quit
+#define kPPUrlQuitGroup [NSString stringWithFormat:@"%@group/quit",kPPUrlHttp]
+///dismiss
+#define kPPUrlDismissGroup [NSString stringWithFormat:@"%@group/dismiss",kPPUrlHttp]
+//
+#define kPPUrlCreateGroup [NSString stringWithFormat:@"%@group/create",kPPUrlHttp]
+//rename
+#define kPPUrlRenameGroupName [NSString stringWithFormat:@"%@group/rename",kPPUrlHttp]
+
+#define kPPUrlInviteFriend [NSString stringWithFormat:@"%@friendship/invite",kPPUrlHttp]
 
 @implementation PPDateEngine
 
@@ -347,6 +376,162 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
               NSLog(@"请求失败");
           }];
 }
+- (void)requestGetBlackFriendListResponse:(PPResponseBlock())aResponseBlock
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPUrlBlackUserList parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requestAddBlackFriendListResponse:(PPResponseBlock())aResponseBlock  friendUserId:(NSString *)userId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"friendId" : userId };
+    [manager POST:kPPUrlAddFriendBlackList parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requsetDeleteBlackFriendListResponse:(PPResponseBlock())aResponseBlock  friendUserId:(NSString *)userId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"friendId" : userId };
+    [manager POST:kPPUrlDeleteFriendBlackList parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
 
+- (void)requsetGetAllGroups:(PPResponseBlock())aResponseBlock
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPUrlGetAllGroups parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requestGetGroupDetails:(PPResponseBlock())aResponseBlock groupId:(NSString *)groupId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPUrlGetGroupId(groupId) parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requsetGetGroupMembers:(PPResponseBlock())aResponseBlock groupId:(NSString *)groupId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPUrlGetGroupMember(groupId) parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requsetJoinResponse:(PPResponseBlock())aResponseBlock Group:(NSString *)groupId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"groupId" : groupId };
+    
+    [manager POST:kPPUrlJoinGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requestInviteResponse:(PPResponseBlock())aResponseBlock
+                      usersId:(NSMutableArray *)usersIdArr groupID:(NSString *)agroupId
+{
+    
+    PPHTTPManager * manager = [PPHTTPManager manager];
+      NSDictionary *params = @{ @"groupId" : agroupId, @"memberIds" : usersIdArr };
+    [manager POST:kPPUrlInviteUserGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requestKickResponse:(PPResponseBlock())aResponseBlock
+                 OutOfGroup:(NSString *)groupID
+                    usersId:(NSMutableArray *)usersId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"groupId" : groupID, @"memberIds" : usersId };
+    [manager POST:kPPUrlKickGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requsetQuitGroupResponse:(PPResponseBlock())aResponseBlock OutOfGroup:(NSString *)groupID
+{
+    NSDictionary *params = @{ @"groupId" : groupID };
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager POST:kPPUrlQuitGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requestDismissGroupResponse:(PPResponseBlock()) aResponseBlock dismissGroupId:(NSString *)groupId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"groupId" : groupId };
+    [manager POST:kPPUrlDismissGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requsetCreateGroupResponse:(PPResponseBlock()) aResponseBlock GroupName:(NSString *)groupName
+                   groupMemberList:(NSArray *)groupMemberList
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{
+                             @"name" : groupName,
+                             @"memberIds" : groupMemberList
+                             };
+    [manager POST:kPPUrlCreateGroup parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requsetUpdateGroupResponse:(void (^)(id))aResponseBlock GroupName:(NSString *)groupName groupId:(NSString *)groupId
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"groupId" : groupId, @"name" : groupName };
+    [manager POST:kPPUrlRenameGroupName parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requsetInviteUsersResponse:(void (^)(id))aResponseBlock addUserId:(NSString *)friendUserID content:(NSString *)content
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{
+                             @"friendId" : friendUserID,
+                             @"message" : content};
+    
+    [manager POST:kPPUrlInviteFriend parameters:kPPUrlInviteFriend success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
 
 @end

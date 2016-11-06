@@ -38,6 +38,43 @@
 - (void)requestUploadImageToken:(PPResponseBlock())aResponseBlock;
 
 - (void)requsetResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId;
+//user/blacklist
+//获取用户的黑名单
+- (void)requestGetBlackFriendListResponse:(PPResponseBlock())aResponseBlock;
+//将好友添加到黑名单当中
+- (void)requestAddBlackFriendListResponse:(PPResponseBlock())aResponseBlock  friendUserId:(NSString *)userId;
+//将好友移除黑名单
+- (void)requsetDeleteBlackFriendListResponse:(PPResponseBlock())aResponseBlock  friendUserId:(NSString *)userId;
+//user/groups
+// 获得用户所有的分组
+- (void)requsetGetAllGroups:(PPResponseBlock())aResponseBlock;
+//根据groupid 分区具体的信息
+- (void)requestGetGroupDetails:(PPResponseBlock())aResponseBlock groupId:(NSString *)groupId;
+//getGroupMembersByID
+- (void)requsetGetGroupMembers:(PPResponseBlock())aResponseBlock groupId:(NSString *)groupId;
+//  加入group
+- (void)requsetJoinResponse:(PPResponseBlock())aResponseBlock Group:(NSString *)groupId;
+// 邀请用户进行group  addUsersIntoGroup
+- (void)requestInviteResponse:(PPResponseBlock())aResponseBlock
+                      usersId:(NSMutableArray *)usersIdArr groupID:(NSString *)agroupId;
+
+- (void)requestKickResponse:(PPResponseBlock())aResponseBlock
+                 OutOfGroup:(NSString *)groupID
+                    usersId:(NSMutableArray *)usersId;
+
+- (void)requsetQuitGroupResponse:(PPResponseBlock())aResponseBlock OutOfGroup:(NSString *)groupID;
+//解散群
+- (void)requestDismissGroupResponse:(PPResponseBlock()) aResponseBlock dismissGroupId:(NSString *)groupId;
+
+//+ (void)createGroupWithGroupName:(NSString *)groupName
+                 //  groupMemberList:(NSArray *)groupMemberList
+
+- (void)requsetCreateGroupResponse:(PPResponseBlock()) aResponseBlock GroupName:(NSString *)groupName
+                   groupMemberList:(NSArray *)groupMemberList;
+
+- (void)requsetUpdateGroupResponse:(void (^)(id))aResponseBlock GroupName:(NSString *)groupName groupId:(NSString *)groupId;
+
+- (void)requsetInviteUsersResponse:(void (^)(id))aResponseBlock addUserId:(NSString *)friendUserID content:(NSString *)content;
 
 
 @end
