@@ -9,6 +9,7 @@
 #import "PPLoginViewController.h"
 #import "PPLoginTableViewCell.h"
 #import "rongChatDemo1-swift.h"
+#import <UIImage+YYWebImage.h>
 
 @interface PPLoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -76,10 +77,13 @@
         make.right.mas_equalTo(self.footerView.mas_right).mas_offset(-31);
         make.height.mas_equalTo(35);
     }];
-    loginBtn.backgroundColor = [UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1];
+    [loginBtn setBackgroundImage:[UIImage yy_imageWithColor:[UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:0.5]] forState:UIControlStateDisabled];
+    [loginBtn setBackgroundImage:[UIImage yy_imageWithColor:[UIColor colorWithRed:104/255.0 green:187/255.0 blue:30/255.0 alpha:1]] forState:UIControlStateNormal];
+    
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [loginBtn setTitle:@"登录" forState:UIControlStateDisabled];
     loginBtn.enabled = NO;
+    [loginBtn addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton * emailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -165,6 +169,11 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     self.editing = YES;
+    
+}
+
+- (void)loginAction:(UIButton *)sender
+{
     
 }
 
