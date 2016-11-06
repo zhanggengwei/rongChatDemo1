@@ -306,11 +306,46 @@
 {
     //进行 图片的上传  
     
+    
+    //获取系统当前的时间戳
+    NSDate *dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval now = [dat timeIntervalSince1970] * 1000;
+    NSString *timeString = [NSString stringWithFormat:@"%f", now];
+    NSString *key = [NSString stringWithFormat:@"%@%@", auserId, timeString];
+    //去掉字符串中的.
+    NSMutableString *str = [NSMutableString stringWithString:key];
+    for (int i = 0; i < str.length; i++) {
+        unichar c = [str characterAtIndex:i];
+        NSRange range = NSMakeRange(i, 1);
+        if (c == '.') { //此处可以是任何字符
+            [str deleteCharactersInRange:range];
+            --i;
+        }
+    }
+    key = [NSString stringWithString:str];
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setValue:@"token" forKey:@"token"];
+    [params setValue:key forKey:@"key"];
+    
+    NSMutableDictionary *ret = [NSMutableDictionary dictionary];
+    [params addEntriesFromDictionary:ret];
+    
+    NSString *url = @"http://upload.qiniu.com";
     PPHTTPManager * manager = [PPHTTPManager manager];
-    
-    
-    
-    
+    [manager POST:url
+       parameters:params
+constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+    [formData appendPartWithFileData:imageData
+                                name:@"file"
+                            fileName:key
+                            mimeType:@"application/octet-stream"];
+}
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              
+          }
+          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"请求失败");
+          }];
 }
 
 
