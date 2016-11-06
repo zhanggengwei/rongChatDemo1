@@ -14,6 +14,7 @@
 #define kPPLoginName @"kPPLoginName"
 #define kPPLoginPassWord @"kPPLoginPassWord"
 #define kPPLoginToekn @"kPPLoginToekn"
+#define kPPUserInfoUserID @"kPPUserInfoUserID"
 #define kPPServiceName  @"kPPServiceName"
 
 

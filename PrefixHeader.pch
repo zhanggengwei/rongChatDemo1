@@ -17,6 +17,7 @@
 
 #import <Masonry/Masonry.h>
 #import <SFHFKeychainUtils/SFHFKeychainUtils.h>
+#import <FMDB/FMDB.h>
 
 #define imageNamed(name) [UIImage imageNamed:name]
 

@@ -105,6 +105,8 @@
         NSError * error;
         PPUserInfoTokenResponse * response = [MTLJSONAdapter modelOfClass:[PPUserInfoTokenResponse class] fromJSONDictionary:responseObject error:&error];
         NSString * token = ((PPTokenDef *)(response.result)).token;
+        NSString * userID = ((PPTokenDef *)(response.result)).indexId;
+        
         [self _completeWithResponse:response block:aResponseBlock];
         if(response.code.integerValue == kPPResponseSucessCode){
             
@@ -114,6 +116,16 @@
             [SFHFKeychainUtils storeUsername:kPPLoginName andPassword:phone forServiceName:kPPServiceName updateExisting:YES error:&error];
             [SFHFKeychainUtils storeUsername:kPPLoginPassWord andPassword:passWord forServiceName:kPPServiceName updateExisting:YES error:&error];
             [SFHFKeychainUtils storeUsername:kPPLoginToekn andPassword:token forServiceName:kPPServiceName updateExisting:YES error:&error];
+            
+            [SFHFKeychainUtils storeUsername:kPPUserInfoUserID andPassword:userID forServiceName:kPPServiceName updateExisting:YES error:&error];
+            
+            [[PPDateEngine manager]requestGetUserInfoResponse:^(id aTaskResponse) {
+                NSLog(@"aTaskResponse =  %@",aTaskResponse);
+                
+                
+            } userID:userID];
+            
+            
         } errorBlock:^(RCConnectErrorCode code) {
             NSLog(@"code ==%d",code);
         
@@ -141,10 +153,14 @@
 
 - (void)requestGetUserInfoResponse:(PPResponseBlock())aResponseBlock userID:(NSString *)userId
 {
+    NSLog(@"userId ==%@",userId);
+    
     PPHTTPManager * manager = [PPHTTPManager manager];
     [manager GET:kPPUrlUserInfo(userId) parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"responseObject =%@",responseObject);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error ==%@",error);
         
     }];
     

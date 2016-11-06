@@ -6,7 +6,15 @@
 //  Copyright © 2016年 vd. All rights reserved.
 //
 
+#define USER_INFO_TABLENAME @"USER_INFO_TABLENAME"
+
 #import "PPTDBEngine.h"
+
+@interface PPTDBEngine ()
+@property (nonatomic,strong) FMDatabase * db;
+
+
+@end
 
 @implementation PPTDBEngine
 // 数据库的管理类
@@ -20,6 +28,10 @@
         shareInstance = [self new];
     });
     return shareInstance;
+}
+- (void)saveUserInfo:(PPUserBase *)baseInfo
+{
+    
 }
 
 @end

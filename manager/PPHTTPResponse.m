@@ -37,3 +37,13 @@
     return [MTLJSONAdapter arrayTransformerWithModelClass:[PPUserBaseInfo class]];
 }
 @end
+
+@implementation PPUserBaseInfoResponse
+
++ (NSValueTransformer *)resultJSONTransformer
+{
+    
+    return [MTLJSONAdapter dictionaryTransformerWithModelClass:[PPUserBaseInfo class]];
+}
+
+@end

@@ -28,3 +28,6 @@
 @interface PPUserFriendListResponse : PPHTTPResponse
 
 @end
+
+@interface PPUserBaseInfoResponse :PPHTTPResponse
+@end
