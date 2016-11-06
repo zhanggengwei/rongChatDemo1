@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define kPPResponseSucessCode 200
 #define kPPObserverLoginSucess @"kPPObserverLoginSucess"
 #define kPPObserverLogoutSucess @"kPPObserverLogoutSucess"
 

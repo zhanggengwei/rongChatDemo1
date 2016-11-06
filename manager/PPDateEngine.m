@@ -67,6 +67,7 @@
         NSError * error;
         PPUserInfoTokenResponse * response = [MTLJSONAdapter modelOfClass:[PPUserInfoTokenResponse class] fromJSONDictionary:responseObject error:&error];
         NSString * token = ((PPTokenDef *)(response.result)).token;
+        [self _completeWithResponse:response block:aResponseBlock];
         
         [[PPChatTools shared]connectWithTokenWithToken:token sucessBlock:^(NSString * _Nullable content) {
             

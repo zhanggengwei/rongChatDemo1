@@ -30,21 +30,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.rootViewController =  UINavigationController(rootViewController:PPLoginViewController.init());
         window?.makeKeyAndVisible()
-        self.createNavBarStyle();
        
-        let manager:PPRequestManager=PPRequestManager.shareManager;
-        manager.requestGetUserToken(phone: "18363070380", passWord: "123456", region: "86", sucess: { (dict) in
-            
-            }) { (dict) in
-                
-        };
+       
+//        let manager:PPRequestManager=PPRequestManager.shareManager;
+//        manager.requestGetUserToken(phone: "18363070380", passWord: "123456", region: "86", sucess: { (dict) in
+//            
+//            }) { (dict) in
+//                
+//        };
         
 //        PPDateEngine.manager().loginWithphone("18363070380", passWord: "123456", region: "86");
         
-        PPDateEngine.manager().loginWith(response: { (response) in
-            
-            
-            }, phone: "18363070380", passWord: "123456", region: "86");
+//        PPDateEngine.manager().loginWith(response: { (response) in
+//            
+//            
+//            }, phone: "18363070380", passWord: "123456", region: "86");
        
         //从一个本地项目资源中读取data.Json文件
         let path: String = Bundle.main.path(forResource: "friendList", ofType: "txt")!
@@ -104,8 +104,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         bar.tintColor = UIColor.white;
         bar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 17)];
     }
-    func createTabbarController()
+    public func createTabbarController()
     {
+         self.createNavBarStyle();
         /*
          控制器name数组
          */
