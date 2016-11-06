@@ -33,6 +33,7 @@ PODS:
   - Mantle/extobjc (2.0.7)
   - Masonry (0.6.4)
   - MBProgressHUD (0.8)
+  - MD5Digest (1.1.0)
   - ODRefreshControl (1.2)
   - RongCloudIMKit (2.7.3)
   - SDWebImage (3.7.6):
@@ -58,6 +59,7 @@ DEPENDENCIES:
   - Mantle (~> 2.0.6)
   - Masonry (~> 0.6.1)
   - MBProgressHUD (= 0.8)
+  - MD5Digest (~> 1.1.0)
   - ODRefreshControl (~> 1.2)
   - RongCloudIMKit (~> 2.7.3)
   - SDWebImage (~> 3.7.1)
@@ -75,6 +77,7 @@ SPEC CHECKSUMS:
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 8688c331cb64702283be37ab8d7d329cdd25f251
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   RongCloudIMKit: 0b93700b17d224c7c213815b8a23a9c356fe20e2
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
@@ -85,6 +88,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 377e74cea9529a94c1a86e3568cb71e213d6bd3d
+PODFILE CHECKSUM: 82efa6724faa325684ef5e931e32018e75073dc5
 
 COCOAPODS: 1.0.1

@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MD5Digest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,7 +97,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0427BC00167756C19DA1A2FDDE306CE3</key>
+		<key>08C2972A73A93D216AA7D53520E00C91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20DD29918287AE815E6CF39DA8928B73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,22 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2FADB5A8D0489A799FBF3C8F6541E57B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2FC00BDBE815772AF96B8084E0E04ABE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34D666454AC1F5B7D0FB23EE29506D3E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>38E2B8E44B2063F0CB9A5A2C7A0E8540</key>
+		<key>3BD110062CD2DECEC864504DD4A87928</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,17 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>565A3E9B238A613EE23D5C58EDA5F5D0</key>
+		<key>6E7F1087B5FA5C4926F097D0B0C24899</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5AA084FB80CD45ED37F232B82A54992B</key>
+		<key>8579AC8DDAC4722911F09C7C345BE0FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68BE3CAAE046D2EE9ACD1912D20B9EEC</key>
+		<key>86A6AD0EC2908AAA630A2123BA3FA6C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,6 +157,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B0B863112E1CFE63D2DAA4D6F3D270BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CECCEFEA389BC80E8F4830C41F636663</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
 		<dict>
 			<key>primary</key>
@@ -167,7 +177,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E23C9632B3CA13DED24B9EA04246D023</key>
+		<key>E096096503252BA514775824E106C421</key>
 		<dict>
 			<key>primary</key>
 			<true/>
