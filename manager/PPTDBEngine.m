@@ -34,4 +34,9 @@
     
 }
 
+- (void)createUser_Info_TableName
+{
+    NSString * createUser_Info = @"create table %@ if not exists "
+}
+
 @end
