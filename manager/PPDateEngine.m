@@ -16,7 +16,7 @@
 #define kPPUrlHttp @"http://api.sealtalk.im/"
 #define kPPUrlLoginUrl [NSString stringWithFormat:@"%@user/login",kPPUrlHttp]
 #define kPPUrlRegisiter [NSString stringWithFormat:@"%@user/regisiter",kPPUrlHttp]
-#define kPPUrlFriendsList [NSString stringWithFormat:@"%@friends",kPPUrlHttp]
+
 //detail
 //friendship/%@/profile
 #define kPPUrlProfile(friendId) [NSString stringWithFormat:@"%@friendship/%@/profile",kPPUrlHttp,friendId]
@@ -26,11 +26,10 @@
 //friendship/all
 
 #define kPPGetAllFriendsList [NSString stringWithFormat:@"%@friendship/all",kPPUrlHttp]
-
-
-//user/send_code
-
-//userInfo
+//user/change_password
+#define kPPUpdatePassWord [NSString stringWithFormat:@"%@user/change_password",kPPUrlHttp]
+//user/reset_password
+#define kPPResetPassWord [NSString stringWithFormat:@"%@user/reset_password",kPPUrlHttp]
 
 #define kPPUrlUserInfo(userId) [NSString stringWithFormat:@"%@user/%@",kPPUrlHttp,userId]
 
@@ -40,6 +39,11 @@
 // 获取版本的信息 ///misc/client_version
 
 #define kPPUrlGetVersions [NSString stringWithFormat:@"%@misc/client_version",kPPUrlHttp]
+//update_profile
+#define kPPUrlUpdateNickName [NSString stringWithFormat:@"%@update_profile",kPPUrlHttp]
+// 获取image token user/get_image_token
+
+#define kPPUrlUploadImageToken [NSString stringWithFormat:@"%@user/get_image_token",kPPUrlHttp]
 
 @implementation PPDateEngine
 
@@ -192,9 +196,17 @@
 
 }
 
-- (void)sendVerifyWithResponse:(PPResponseBlock())aResponseBlock Code:(NSString *)phone;
+- (void)sendVerifyWithResponse:(PPResponseBlock())aResponseBlock phone:(NSString *)phoneNumber regionString:(NSString *)region
 {
     PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"region" : region, @"phone" : phoneNumber};
+    
+    [manager POST:kPPSendVirtifyCode parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
     
 }
 
@@ -213,5 +225,90 @@
     }];
     
 }
+
+- (void)searchUserInfoResponse:(PPResponseBlock())aResponseBlock friendID:(NSString *)friendid
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager GET:kPPUrlProfile(friendid) parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+
+//设置用户的备注信息
+
+- (void)setResponse:(PPResponseBlock())aResponseBlock  DisPlayName:(NSString *)displayName friendID:(NSString *)afriendID
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary * dict = @{@"friendId":afriendID,@"displayName":displayName};
+    
+    [manager POST:kPPUrlSetDispalyName parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+- (void)requestResponse:(PPResponseBlock())aResponseBlock
+         changePassWord:(NSString *)newPassWord oldPassWord:(NSString * )oldPassWord
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary * params = @{@"oldPassword" : oldPassWord, @"newPassword" : newPassWord};
+    
+    [manager POST:kPPUpdatePassWord parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requestResetPassWordResponse:(void (^)(id))aResponseBlock resetPassWord:(NSString *)passWord verification_token:(NSString *)token
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{
+                             @"password" : passWord,
+                             @"verification_token" : token
+                             };
+    
+    [manager POST:kPPResetPassWord parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+- (void)requestUpdateNickNameResponse:(PPResponseBlock())aResponseBlock nickName:(NSString *)nickName
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary * dict = @{ @"username" : nickName};
+    
+    
+    [manager POST:kPPUrlUpdateNickName parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+
+- (void)requestUploadImageToken:(PPResponseBlock())aResponseBlock
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    [manager POST:kPPUrlUploadImageToken parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+}
+
+- (void)requsetResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId
+{
+    //进行 图片的上传  
+    
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    
+    
+}
+
 
 @end
