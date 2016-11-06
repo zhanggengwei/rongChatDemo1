@@ -287,6 +287,7 @@
 		75D7DB801DCB6D070020020A /* plugins_FriendNotify@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plugins_FriendNotify@3x.png"; sourceTree = "<group>"; };
 		75D7DB8C1DCB71EE0020020A /* PPDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPDiscoverViewController.swift; sourceTree = "<group>"; };
 		75D7DB8E1DCB75AE0020020A /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		75E881AD1DCF3E1C009CC908 /* rongChatDemo1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rongChatDemo1.entitlements; sourceTree = "<group>"; };
 		79C811EF116F63986BF50B28 /* Pods-rongChatDemo1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongChatDemo1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1.debug.xcconfig"; sourceTree = "<group>"; };
 		916808A4CA9161BCA1DDC41F /* Pods-rongChatDemo1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rongChatDemo1.release.xcconfig"; path = "Pods/Target Support Files/Pods-rongChatDemo1/Pods-rongChatDemo1.release.xcconfig"; sourceTree = "<group>"; };
 		CAD5077F98C5C4C5FCB0ABC2 /* libPods-rongChatDemo1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rongChatDemo1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -626,6 +627,7 @@
 		75CC9CDC1DB8F17800721145 /* rongChatDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				75E881AD1DCF3E1C009CC908 /* rongChatDemo1.entitlements */,
 				75C39EEF1DC4C5720066E7B1 /* tools */,
 				75C39ED61DC4C55A0066E7B1 /* UI */,
 				75CC9CDD1DB8F17800721145 /* AppDelegate.swift */,
@@ -744,6 +746,11 @@
 						DevelopmentTeam = R6B5BG54J2;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					75CC9CED1DB8F17800721145 = {
 						CreatedOnToolsVersion = 8.0;
@@ -1121,6 +1128,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = rongChatDemo1/rongChatDemo1.entitlements;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;
@@ -1140,6 +1148,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = rongChatDemo1/rongChatDemo1.entitlements;
 				DEVELOPMENT_TEAM = R6B5BG54J2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = rongChatDemo1/Info.plist;

@@ -107,14 +107,13 @@
         NSString * token = ((PPTokenDef *)(response.result)).token;
         [self _completeWithResponse:response block:aResponseBlock];
         if(response.code.integerValue == kPPResponseSucessCode){
-            [self getFriendListResponse:^(id aTaskResponse) {
-                
-            }];
+            
         }
         [[PPChatTools shared]connectWithTokenWithToken:token sucessBlock:^(NSString * _Nullable content) {
-            
-            NSLog(@"%@",content);
-            
+            NSError * error;
+            [SFHFKeychainUtils storeUsername:kPPLoginName andPassword:phone forServiceName:kPPServiceName updateExisting:YES error:&error];
+            [SFHFKeychainUtils storeUsername:kPPLoginPassWord andPassword:passWord forServiceName:kPPServiceName updateExisting:YES error:&error];
+            [SFHFKeychainUtils storeUsername:kPPLoginToekn andPassword:token forServiceName:kPPServiceName updateExisting:YES error:&error];
         } errorBlock:^(RCConnectErrorCode code) {
             NSLog(@"code ==%d",code);
         

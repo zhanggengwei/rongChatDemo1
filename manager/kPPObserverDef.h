@@ -11,6 +11,12 @@
 #define kPPObserverLoginSucess @"kPPObserverLoginSucess"
 #define kPPObserverLogoutSucess @"kPPObserverLogoutSucess"
 
+#define kPPLoginName @"kPPLoginName"
+#define kPPLoginPassWord @"kPPLoginPassWord"
+#define kPPLoginToekn @"kPPLoginToekn"
+#define kPPServiceName  @"kPPServiceName"
+
+
 @interface kPPObserverDef : NSObject
 
 @end
