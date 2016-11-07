@@ -68,7 +68,10 @@
     }
     PPSettingCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPSettingCell"];
     [cell layoutContent:self.dataArr[index] textAligent:index==6 ?NSTextAlignmentCenter:NSTextAlignmentLeft];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    if (indexPath.section != ([tableView numberOfSections]-1))
+    {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     return cell;
     
     
@@ -117,7 +120,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 48;
 }
 
 @end

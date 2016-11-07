@@ -119,7 +119,7 @@ class PPMyViewController: PPBaseViewController ,UITableViewDelegate,UITableViewD
         {
             return 75;
         }
-        return 40;
+        return 48;
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {

@@ -37,10 +37,15 @@
 - (void)createUser_Info_TableName
 {
     
-    NSString * createUser_Info = [NSString stringWithFormat:@"create table  if not exists %@ (indexId text private key not null,nickname text,displayName text,portraitUri text,updatedAt text,phone text,region text)",USER_INFO_TABLENAME];
+    NSString * createUser_Info = [NSString stringWithFormat:@"create table  if not exists %@(indexId text  primary key not null,nickname text,displayName text,portraitUri text,updatedAt text,phone text,region text,isSelf bool)",USER_INFO_TABLENAME];
+    
     
 }
 
+- (void)saveFriendList:(NSArray <PPUserBaseInfo *> *)arr
+{
+    
+}
 
 
 @end

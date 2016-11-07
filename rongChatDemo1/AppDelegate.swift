@@ -11,94 +11,66 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame:UIScreen.main.bounds)
-        window?.backgroundColor = UIColor.white
+        window?.backgroundColor = UIColor.white;
         
-        //
         PPChatTools.shared.initRCIM();
-            
+        let value = UserDefaults.standard.string(forKey: APPIsLogin as String);
         
-        print(NSHomeDirectory())
         
-        //self.createTabbarController()
-        
-        self.window?.rootViewController =  UINavigationController(rootViewController:PPLoginViewController.init());
+        if (value == nil)
+        {
+            self.createRootLoingControlelr();
+        }else
+        {
+            self.createTabbarController();
+        }
+   
         window?.makeKeyAndVisible()
-       
-       
-//        let manager:PPRequestManager=PPRequestManager.shareManager;
-//        manager.requestGetUserToken(phone: "18363070380", passWord: "123456", region: "86", sucess: { (dict) in
-//            
-//            }) { (dict) in
-//                
-//        };
-        
-//        PPDateEngine.manager().loginWithphone("18363070380", passWord: "123456", region: "86");
-        
-//        PPDateEngine.manager().loginWith(response: { (response) in
-//            
-//            
-//            }, phone: "18363070380", passWord: "123456", region: "86");
-       
         //从一个本地项目资源中读取data.Json文件
         let path: String = Bundle.main.path(forResource: "friendList", ofType: "txt")!
         let nsUrl = NSURL(fileURLWithPath: path)
         let  nsData: NSData = NSData(contentsOf: nsUrl as URL)!
-        
- 
         var json:Any! = nil;
-        
-    
         do {
             
             json = try JSONSerialization.jsonObject(with: nsData as Data, options:JSONSerialization.ReadingOptions.mutableContainers);
-            
-            
             
         } catch {
             
             // deal with error
         }
-
-        
         print(json);
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.loginActionState), name:swiftkPPLoginSucess as NSNotification.Name, object: nil);
         
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.loginActionState), name:swiftkPPLoginName as NSNotification.Name, object: nil);
-        
-        
-        
-        
-        
-        
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.loginActionState), name:swiftkPPLogOutSucess as NSNotification.Name, object: nil);
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
-
+    
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
-
+    
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
-
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
+    
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
@@ -115,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     public func createTabbarController()
     {
-         self.createNavBarStyle();
+        self.createNavBarStyle();
         /*
          控制器name数组
          */
@@ -170,24 +142,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          */
         //tabBarController.showControllerIndex(3)
     }
-
+    
+    func createRootLoingControlelr() -> Void
+    {
+        self.window?.rootViewController =  UINavigationController(rootViewController:PPLoginViewController.init());
+    }
+    
     func loginActionState(noti:NSNotification)->Void
     {
         print("noti.name == ",noti.name);
         
         switch noti.name.rawValue
         {
-        case "":
+        case swiftkPPLoginSucess as NSString:
+            self.createTabbarController();
+            UserDefaults.standard.setValue(APPIsLogin, forKey: APPIsLogin as String)
+            UserDefaults.standard.synchronize()
             break;
-        case "":
+        case swiftkPPLogOutSucess as NSString:
+            self.createRootLoingControlelr();
+            UserDefaults.standard.removeObject(forKey: APPIsLogin as String)
+            UserDefaults.standard.synchronize()
             break;
         default:
             break;
-            
         }
         
     }
     
-
+    
 }
 
