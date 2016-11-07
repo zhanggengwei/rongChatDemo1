@@ -11,8 +11,8 @@
 #import "PPTDBEngine.h"
 
 @interface PPTDBEngine ()
-@property (nonatomic,strong) FMDatabase * db;
 
+@property (nonatomic,strong) FMDatabase * db;
 
 @end
 
@@ -26,9 +26,25 @@
     
     dispatch_once(&token, ^{
         shareInstance = [self new];
+    
     });
     return shareInstance;
 }
+
+- (void)loadDataBase:(NSString *)userID
+{
+    
+    
+    self.db = [[FMDatabase alloc]initWithPath:@""];
+    if([self.db open])
+    {
+        
+    }else
+    {
+        
+    }
+}
+
 - (void)saveUserInfo:(PPUserBase *)baseInfo
 {
     

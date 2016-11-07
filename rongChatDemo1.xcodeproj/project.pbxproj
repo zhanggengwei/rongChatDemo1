@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		400E6B181DCC783E00783F4F /* friendList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 400E6B171DCC783E00783F4F /* friendList.txt */; };
+		40E013EB1DD07495002D189C /* OTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013E81DD07495002D189C /* OTFileManager.m */; };
+		40E013EC1DD07495002D189C /* PPFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013EA1DD07495002D189C /* PPFileManager.m */; };
+		40E013FB1DD07544002D189C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013EF1DD07544002D189C /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E013FC1DD07544002D189C /* des.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013F21DD07544002D189C /* des.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E013FD1DD07544002D189C /* Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013F41DD07544002D189C /* Md5.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E013FE1DD07544002D189C /* rc4.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013F61DD07544002D189C /* rc4.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E013FF1DD07544002D189C /* UrlDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013F81DD07544002D189C /* UrlDecode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E014001DD07544002D189C /* UrlEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E013FA1DD07544002D189C /* UrlEncode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40E014171DD075A9002D189C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014161DD075A9002D189C /* NSString+MD5.m */; };
 		7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */; };
 		7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */; };
 		7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */; };
@@ -144,6 +153,25 @@
 
 /* Begin PBXFileReference section */
 		400E6B171DCC783E00783F4F /* friendList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = friendList.txt; sourceTree = "<group>"; };
+		40E013E71DD07495002D189C /* OTFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTFileManager.h; sourceTree = "<group>"; };
+		40E013E81DD07495002D189C /* OTFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTFileManager.m; sourceTree = "<group>"; };
+		40E013E91DD07495002D189C /* PPFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPFileManager.h; sourceTree = "<group>"; };
+		40E013EA1DD07495002D189C /* PPFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPFileManager.m; sourceTree = "<group>"; };
+		40E013EE1DD07544002D189C /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		40E013EF1DD07544002D189C /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		40E013F01DD07544002D189C /* Codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Codec.h; sourceTree = "<group>"; };
+		40E013F11DD07544002D189C /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		40E013F21DD07544002D189C /* des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = des.m; sourceTree = "<group>"; };
+		40E013F31DD07544002D189C /* Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Md5.h; sourceTree = "<group>"; };
+		40E013F41DD07544002D189C /* Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Md5.m; sourceTree = "<group>"; };
+		40E013F51DD07544002D189C /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		40E013F61DD07544002D189C /* rc4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rc4.m; sourceTree = "<group>"; };
+		40E013F71DD07544002D189C /* UrlDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlDecode.h; sourceTree = "<group>"; };
+		40E013F81DD07544002D189C /* UrlDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlDecode.m; sourceTree = "<group>"; };
+		40E013F91DD07544002D189C /* UrlEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlEncode.h; sourceTree = "<group>"; };
+		40E013FA1DD07544002D189C /* UrlEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlEncode.m; sourceTree = "<group>"; };
+		40E014151DD075A9002D189C /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		40E014161DD075A9002D189C /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_collect@2x.png"; sourceTree = "<group>"; };
 		7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_money@2x.png"; sourceTree = "<group>"; };
 		7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_photo@2x.png"; sourceTree = "<group>"; };
@@ -317,6 +345,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40E013E61DD07495002D189C /* OT */ = {
+			isa = PBXGroup;
+			children = (
+				40E013E71DD07495002D189C /* OTFileManager.h */,
+				40E013E81DD07495002D189C /* OTFileManager.m */,
+				40E013E91DD07495002D189C /* PPFileManager.h */,
+				40E013EA1DD07495002D189C /* PPFileManager.m */,
+			);
+			path = OT;
+			sourceTree = "<group>";
+		};
+		40E013ED1DD07544002D189C /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				40E013EE1DD07544002D189C /* Base64.h */,
+				40E013EF1DD07544002D189C /* Base64.m */,
+				40E013F01DD07544002D189C /* Codec.h */,
+				40E013F11DD07544002D189C /* des.h */,
+				40E013F21DD07544002D189C /* des.m */,
+				40E013F31DD07544002D189C /* Md5.h */,
+				40E013F41DD07544002D189C /* Md5.m */,
+				40E013F51DD07544002D189C /* rc4.h */,
+				40E013F61DD07544002D189C /* rc4.m */,
+				40E013F71DD07544002D189C /* UrlDecode.h */,
+				40E013F81DD07544002D189C /* UrlDecode.m */,
+				40E013F91DD07544002D189C /* UrlEncode.h */,
+				40E013FA1DD07544002D189C /* UrlEncode.m */,
+			);
+			path = Codec;
+			sourceTree = "<group>";
+		};
 		50384DBF05BC23385E3C6FE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +409,7 @@
 		751894141DCD6A4D00955C47 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				40E013E61DD07495002D189C /* OT */,
 				751894151DCD6A4D00955C47 /* PPDataDef.h */,
 				751894161DCD6A4D00955C47 /* PPDataDef.m */,
 				751894171DCD6A4D00955C47 /* PPDateEngine.h */,
@@ -374,6 +434,8 @@
 				751894211DCD6A4D00955C47 /* PPChatTools.swift */,
 				751894221DCD6A4D00955C47 /* PPTool.h */,
 				751894231DCD6A4D00955C47 /* PPTool.m */,
+				40E014151DD075A9002D189C /* NSString+MD5.h */,
+				40E014161DD075A9002D189C /* NSString+MD5.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -558,6 +620,7 @@
 		75C39EEF1DC4C5720066E7B1 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				40E013ED1DD07544002D189C /* Codec */,
 				75C39EF01DC4C5720066E7B1 /* Header.pch */,
 				75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */,
 				75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */,
@@ -939,18 +1002,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E013FC1DD07544002D189C /* des.m in Sources */,
 				7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */,
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
+				40E013EB1DD07495002D189C /* OTFileManager.m in Sources */,
 				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,
 				751894311DCD764500955C47 /* PPMachios.swift in Sources */,
 				75D7DB771DCB68FA0020020A /* PPContactListCell.m in Sources */,
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
 				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
+				40E013FF1DD07544002D189C /* UrlDecode.m in Sources */,
+				40E013FD1DD07544002D189C /* Md5.m in Sources */,
 				75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */,
 				7504F1C51DCA3A280039FFB9 /* PPAccountSecurityViewController.m in Sources */,
 				751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */,
+				40E014001DD07544002D189C /* UrlEncode.m in Sources */,
 				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
+				40E013EC1DD07495002D189C /* PPFileManager.m in Sources */,
 				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
 				75A7C8ED1DCED20E0090D892 /* kPPObserverDef.m in Sources */,
 				7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */,
@@ -958,12 +1027,15 @@
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75D7DB8D1DCB71EE0020020A /* PPDiscoverViewController.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
+				40E013FE1DD07544002D189C /* rc4.m in Sources */,
+				40E013FB1DD07544002D189C /* Base64.m in Sources */,
 				751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */,
 				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
 				751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */,
 				75A7C8F01DCF1C6D0090D892 /* PPTDBEngine.m in Sources */,
 				751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */,
 				75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */,
+				40E014171DD075A9002D189C /* NSString+MD5.m in Sources */,
 				7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */,
 				751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */,
 				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
