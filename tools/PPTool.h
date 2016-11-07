@@ -9,7 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface PPTool : NSObject
-
-
-
++ (CGSize)sizeWithString:(NSString *)aString font:(UIFont *)aFont constrainedToSize:(CGSize)aSize lineBreakMode:(NSLineBreakMode)aLineBreakMode;
 @end

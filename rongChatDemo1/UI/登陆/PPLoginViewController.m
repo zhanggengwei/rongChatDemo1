@@ -59,7 +59,7 @@
     self.headerView.textAlignment = NSTextAlignmentCenter;
     self.footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, PPMachios.SCREEN_WIDTH, 0)];
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,64,PPMachios.SCREEN_WIDTH, PPMachios.SCREEN_HEIGHT - 64) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0,64,PPMachios.SCREEN_WIDTH,PPMachios.SCREEN_HEIGHT - 64) style:UITableViewStyleGrouped];
     
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
