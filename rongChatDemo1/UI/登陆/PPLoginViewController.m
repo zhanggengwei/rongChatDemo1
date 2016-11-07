@@ -32,8 +32,7 @@
     
     [self createUI];
     [self createLoginNavBarStryle];
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(loginSucess:) name:kPPObserverLoginSucess object:nil];
+ 
     
     
     // Do any additional setup after loading the view.
@@ -203,10 +202,7 @@
     }
 }
 
-- (void)loginSucess:(NSNotification *)noti
-{
-    
-}
+
 
 #pragma mark loginMethod
 
@@ -215,8 +211,7 @@
     [[PPDateEngine manager]loginWithWithResponse:^(PPHTTPResponse * aTaskResponse) {
         if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
         {
-            AppDelegate * app = [UIApplication sharedApplication].delegate;
-            [app createTabbarController];
+            [[NSNotificationCenter defaultCenter]postNotificationName:kPPObserverLoginSucess object:nil];
             
         }
         

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+let swiftkPPLoginName:NSString  = "kPPObserverLoginSucess";
+
 
 class PPMachios:NSObject
 {

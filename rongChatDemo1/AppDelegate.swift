@@ -69,6 +69,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print(json);
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.loginActionState), name:swiftkPPLoginName as NSNotification.Name, object: nil);
+        
+        
+        
+        
+        
+        
+        
         return true
     }
 
@@ -162,6 +171,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //tabBarController.showControllerIndex(3)
     }
 
+    func loginActionState(noti:NSNotification)->Void
+    {
+        print("noti.name == ",noti.name);
+        
+        switch noti.name.rawValue
+        {
+        case "":
+            break;
+        case "":
+            break;
+        default:
+            break;
+            
+        }
+        
+    }
+    
 
 }
 

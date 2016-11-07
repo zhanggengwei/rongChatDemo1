@@ -24,7 +24,6 @@
 		751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941A1DCD6A4D00955C47 /* PPHTTPManager.m */; };
 		751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */; };
 		751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */; };
-		751894291DCD6A4D00955C47 /* PPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */; };
 		7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894211DCD6A4D00955C47 /* PPChatTools.swift */; };
 		7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894231DCD6A4D00955C47 /* PPTool.m */; };
 		751894311DCD764500955C47 /* PPMachios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894301DCD764500955C47 /* PPMachios.swift */; };
@@ -170,7 +169,6 @@
 		7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPRequestSerializer.m; sourceTree = "<group>"; };
 		7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPResponse.h; sourceTree = "<group>"; };
 		7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPResponse.m; sourceTree = "<group>"; };
-		7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRequestManager.swift; sourceTree = "<group>"; };
 		751894211DCD6A4D00955C47 /* PPChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPChatTools.swift; sourceTree = "<group>"; };
 		751894221DCD6A4D00955C47 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
 		751894231DCD6A4D00955C47 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 				7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */,
 				7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */,
 				7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */,
-				7518941F1DCD6A4D00955C47 /* PPRequestManager.swift */,
 				75A7C8EB1DCED20E0090D892 /* kPPObserverDef.h */,
 				75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */,
 				75A7C8EE1DCF1C6D0090D892 /* PPTDBEngine.h */,
@@ -960,7 +957,6 @@
 				7504F1BD1DCA1A8F0039FFB9 /* PPSetingViewController.m in Sources */,
 				75C39EE81DC4C55A0066E7B1 /* PPTabBarController.swift in Sources */,
 				75D7DB8D1DCB71EE0020020A /* PPDiscoverViewController.swift in Sources */,
-				751894291DCD6A4D00955C47 /* PPRequestManager.swift in Sources */,
 				75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */,
 				751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */,
 				75C39EE71DC4C55A0066E7B1 /* PPNavgationController.swift in Sources */,
