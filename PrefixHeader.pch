@@ -19,6 +19,7 @@
 #import <SFHFKeychainUtils/SFHFKeychainUtils.h>
 #import <FMDB/FMDB.h>
 #import "NSString+MD5.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define imageNamed(name) [UIImage imageNamed:name]
 
