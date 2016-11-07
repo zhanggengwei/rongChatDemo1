@@ -25,6 +25,22 @@ pod 'RongCloudIMKit', '~> 2.7.3'
 pod 'UIView+FrameEx', '~> 0.0.1'
 pod 'SFHFKeychainUtils', '~> 0.0.1'
 pod 'MD5Digest', '~> 1.1.0'
+pod 'IQKeyboardManager'
+
+#log
+
+pod 'Bugly', '~> 2.4.2'
+#MAP
+pod 'AMapSearch', '~> 4.3.0'
+pod 'AMapLocation', '~> 2.1.1'
+
+#Versions
+pod 'ICEVersionUpdate', '~> 1.0.0'
+
+#AlertView
+
+pod 'ICECustomAlertView', '~> 1.0.2'
+
 end
 
 target ‘rongChatDemo1’ do
