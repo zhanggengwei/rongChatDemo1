@@ -20,7 +20,9 @@
 		40E014441DD0841B002D189C /* PPInfoMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014431DD0841B002D189C /* PPInfoMessageViewController.m */; };
 		40E014471DD0861C002D189C /* PPInfoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014461DD0861C002D189C /* PPInfoMessageCell.m */; };
 		40E0144D1DD171A1002D189C /* PPShowSelectIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E0144C1DD171A1002D189C /* PPShowSelectIconViewController.m */; };
-		40E0144F1DD177C5002D189C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E0144E1DD177C5002D189C /* icon.png */; };
+		40E014571DD1917F002D189C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E014561DD1917F002D189C /* icon.png */; };
+		40E0145A1DD19549002D189C /* PPImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014591DD19549002D189C /* PPImageUtil.m */; };
+		40E0145D1DD195DF002D189C /* PPColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E0145C1DD195DF002D189C /* PPColorUtil.m */; };
 		7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */; };
 		7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */; };
 		7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */; };
@@ -182,7 +184,11 @@
 		40E014461DD0861C002D189C /* PPInfoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPInfoMessageCell.m; sourceTree = "<group>"; };
 		40E0144B1DD171A1002D189C /* PPShowSelectIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPShowSelectIconViewController.h; sourceTree = "<group>"; };
 		40E0144C1DD171A1002D189C /* PPShowSelectIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPShowSelectIconViewController.m; sourceTree = "<group>"; };
-		40E0144E1DD177C5002D189C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		40E014561DD1917F002D189C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		40E014581DD19549002D189C /* PPImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageUtil.h; sourceTree = "<group>"; };
+		40E014591DD19549002D189C /* PPImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageUtil.m; sourceTree = "<group>"; };
+		40E0145B1DD195DF002D189C /* PPColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPColorUtil.h; sourceTree = "<group>"; };
+		40E0145C1DD195DF002D189C /* PPColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPColorUtil.m; sourceTree = "<group>"; };
 		7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_collect@2x.png"; sourceTree = "<group>"; };
 		7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_money@2x.png"; sourceTree = "<group>"; };
 		7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_photo@2x.png"; sourceTree = "<group>"; };
@@ -515,7 +521,7 @@
 		75C39EB41DC4897C0066E7B1 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				40E0144E1DD177C5002D189C /* icon.png */,
+				40E014561DD1917F002D189C /* icon.png */,
 				757082DF1DCB7F28000148CB /* discover */,
 				75D7DB781DCB6D070020020A /* AddressBook */,
 				7504F1C61DCA3C570039FFB9 /* contacts_add_friend@2x.png */,
@@ -638,6 +644,10 @@
 		75C39EEF1DC4C5720066E7B1 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				40E0145B1DD195DF002D189C /* PPColorUtil.h */,
+				40E0145C1DD195DF002D189C /* PPColorUtil.m */,
+				40E014581DD19549002D189C /* PPImageUtil.h */,
+				40E014591DD19549002D189C /* PPImageUtil.m */,
 				40E013ED1DD07544002D189C /* Codec */,
 				75C39EF01DC4C5720066E7B1 /* Header.pch */,
 				75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */,
@@ -869,7 +879,6 @@
 			files = (
 				7504F1B71DCA0C310039FFB9 /* MoreExpressionShops@3x.png in Resources */,
 				75D7DB841DCB6D070020020A /* add_friend_icon_offical@3x.png in Resources */,
-				40E0144F1DD177C5002D189C /* icon.png in Resources */,
 				7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */,
 				757083191DCB80A6000148CB /* bottleButtonThrow@2x.png in Resources */,
 				757082E31DCB7F8C000148CB /* ff_IconShake.png in Resources */,
@@ -935,6 +944,7 @@
 				757083131DCB8088000148CB /* bottleRecord@2x.png in Resources */,
 				7570831C1DCB80B4000148CB /* bottleButtonMine.png in Resources */,
 				7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */,
+				40E014571DD1917F002D189C /* icon.png in Resources */,
 				75D7DB821DCB6D070020020A /* add_friend_icon_addgroup@3x.png in Resources */,
 				757083241DCB80CD000148CB /* bottleBoard.png in Resources */,
 				75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
@@ -1022,6 +1032,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E013FC1DD07544002D189C /* des.m in Sources */,
+				40E0145D1DD195DF002D189C /* PPColorUtil.m in Sources */,
 				7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */,
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
@@ -1033,6 +1044,7 @@
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
 				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
 				40E013FF1DD07544002D189C /* UrlDecode.m in Sources */,
+				40E0145A1DD19549002D189C /* PPImageUtil.m in Sources */,
 				40E013FD1DD07544002D189C /* Md5.m in Sources */,
 				40E014441DD0841B002D189C /* PPInfoMessageViewController.m in Sources */,
 				75C39EE61DC4C55A0066E7B1 /* PPBaseViewController.swift in Sources */,

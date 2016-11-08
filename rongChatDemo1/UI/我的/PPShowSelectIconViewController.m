@@ -7,9 +7,13 @@
 //
 
 #import "PPShowSelectIconViewController.h"
+#import <WActionSheet/NLActionSheet.h>
+#import "PPImageUtil.h"
 
-@interface PPShowSelectIconViewController ()
+
+@interface PPShowSelectIconViewController ()<UIImagePickerControllerDelegate>
 @property (nonatomic,strong) UIImageView * imageView;
+@property (nonatomic,strong) UIImage * uploadImage;
 
 @end
 
@@ -31,7 +35,7 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon"] style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"icon"] style:UIBarButtonItemStylePlain target:self action:@selector(showImageSelected:)];
     
     
     // Do any additional setup after loading the view.
@@ -40,6 +44,29 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)showImageSelected:(UIBarButtonItem *)item
+{
+    NLActionSheet * sheet = [[NLActionSheet alloc]initWithTitle:@"" cancelTitle:@"取消" otherTitles:@[@"拍照",@"从手机相册选择",@"保存图片"]];
+    sheet.otherTitlesFont = [UIFont systemFontOfSize:15];
+    [sheet showView];
+    
+    [sheet dismissForCompletionHandle:^(NSInteger clickedIndex, BOOL isCancel) {
+        if(clickedIndex==0&&isCancel==NO)
+        {
+            [self showCarema];
+        }
+    }];
+    
+}
+- (void)showCarema
+{
+    UIImagePickerController * controller = [UIImagePickerController new];
+    controller.delegate = self;
+    controller.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [self presentViewController:controller animated:YES completion:nil];
+    
 }
 
 /*
@@ -51,5 +78,33 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0)
+{
+   
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    self.uploadImage = [PPImageUtil imageCompressLargeImageToAspectFillScreen:[info objectForKey:@"UIImagePickerControllerOriginalImage"]];
+    self.imageView.image = self.uploadImage;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    [[PPDateEngine manager]requestUploadImageToken:^(id aTaskResponse) {
+        NSLog(@"aTaskResponse  == %@",aTaskResponse);
+        
+    }];
+    
+    
+    
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
 
 @end

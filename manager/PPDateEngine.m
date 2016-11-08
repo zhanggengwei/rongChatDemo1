@@ -339,9 +339,12 @@
 {
     PPHTTPManager * manager = [PPHTTPManager manager];
     
-    [manager POST:kPPUrlUploadImageToken parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
+    [manager GET:kPPUrlUploadImageToken parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        NSLog(@"responseObject == %@",responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error == %@",error);
+        
         
     }];
 }
