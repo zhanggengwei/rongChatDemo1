@@ -15,7 +15,7 @@ NSArray * titleArr ()
 #import "PPInfoMessageViewController.h"
 #import "PPInfoMessageCell.h"
 #import "PPSettingCell.h"
-
+#import "PPShowSelectIconViewController.h"
 
 @interface PPInfoMessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView * tableView;
@@ -50,7 +50,13 @@ NSArray * titleArr ()
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if(indexPath.section == 0 && indexPath.row == 0)
+    {
+        PPShowSelectIconViewController * controller = [PPShowSelectIconViewController new];
+        [self.navigationController pushViewController:controller animated:YES];
+        
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -83,7 +89,7 @@ NSArray * titleArr ()
     {
  
         PPInfoMessageCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPInfoMessageCell"];
-        [cell layoutLeftContent:arr[indexPath.row] rightImage:indexPath.row ==0? @"http://pic6.huitu.com/res/20130116/84481_20130116142820494200_1.jpg":[UIImage imageNamed:@"setting_myQR"] imageWidth:indexPath.row == 0 ? 90:30];
+        [cell layoutLeftContent:arr[indexPath.row] rightImage:indexPath.row ==0? @"http://pic6.huitu.com/res/20130116/84481_20130116142820494200_1.jpg":[UIImage imageNamed:@"setting_myQR"] imageWidth:indexPath.row == 0 ? 90:20];
         
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             return cell;

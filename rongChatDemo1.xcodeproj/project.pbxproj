@@ -19,6 +19,7 @@
 		40E014171DD075A9002D189C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014161DD075A9002D189C /* NSString+MD5.m */; };
 		40E014441DD0841B002D189C /* PPInfoMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014431DD0841B002D189C /* PPInfoMessageViewController.m */; };
 		40E014471DD0861C002D189C /* PPInfoMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E014461DD0861C002D189C /* PPInfoMessageCell.m */; };
+		40E0144D1DD171A1002D189C /* PPShowSelectIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E0144C1DD171A1002D189C /* PPShowSelectIconViewController.m */; };
 		7504F1B31DCA0C310039FFB9 /* me_collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */; };
 		7504F1B41DCA0C310039FFB9 /* me_money@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */; };
 		7504F1B51DCA0C310039FFB9 /* me_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */; };
@@ -178,6 +179,8 @@
 		40E014431DD0841B002D189C /* PPInfoMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPInfoMessageViewController.m; sourceTree = "<group>"; };
 		40E014451DD0861C002D189C /* PPInfoMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPInfoMessageCell.h; sourceTree = "<group>"; };
 		40E014461DD0861C002D189C /* PPInfoMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPInfoMessageCell.m; sourceTree = "<group>"; };
+		40E0144B1DD171A1002D189C /* PPShowSelectIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPShowSelectIconViewController.h; sourceTree = "<group>"; };
+		40E0144C1DD171A1002D189C /* PPShowSelectIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPShowSelectIconViewController.m; sourceTree = "<group>"; };
 		7504F1AD1DCA0C310039FFB9 /* me_collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_collect@2x.png"; sourceTree = "<group>"; };
 		7504F1AE1DCA0C310039FFB9 /* me_money@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_money@2x.png"; sourceTree = "<group>"; };
 		7504F1AF1DCA0C310039FFB9 /* me_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_photo@2x.png"; sourceTree = "<group>"; };
@@ -597,6 +600,8 @@
 				7504F1C41DCA3A280039FFB9 /* PPAccountSecurityViewController.m */,
 				40E014421DD0841B002D189C /* PPInfoMessageViewController.h */,
 				40E014431DD0841B002D189C /* PPInfoMessageViewController.m */,
+				40E0144B1DD171A1002D189C /* PPShowSelectIconViewController.h */,
+				40E0144C1DD171A1002D189C /* PPShowSelectIconViewController.m */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -1016,6 +1021,7 @@
 				7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */,
 				7504F1C01DCA1C960039FFB9 /* PPSettingCell.m in Sources */,
 				75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */,
+				40E0144D1DD171A1002D189C /* PPShowSelectIconViewController.m in Sources */,
 				40E013EB1DD07495002D189C /* OTFileManager.m in Sources */,
 				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,
 				751894311DCD764500955C47 /* PPMachios.swift in Sources */,
