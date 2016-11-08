@@ -34,7 +34,9 @@ NSArray * titleArr ()
     [self.tableView registerClass:[PPSettingCell class] forCellReuseIdentifier:@"PPSettingCell"];
     
     [self.tableView registerClass:[PPInfoMessageCell class] forCellReuseIdentifier:@"PPInfoMessageCell"];
+    self.title = @"个人信息";
     
+    self.tableView.sectionFooterHeight = 0.1;
     // Do any additional setup after loading the view.
 }
 
@@ -65,6 +67,9 @@ NSArray * titleArr ()
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(indexPath.section == 0 && indexPath.row == 0)
+        return 90;
+    
     return 45;
 }
 #pragma mark UITableViewDataSource
@@ -72,18 +77,23 @@ NSArray * titleArr ()
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if(indexPath.section == 0)
+    NSArray * arr = titleArr()[indexPath.section];
+    
+    if(indexPath.section == 0&&(indexPath.row == 0 || indexPath.row == 3))
     {
-        if(indexPath.row == 0 || indexPath.row == 3)
-        {
-            PPInfoMessageCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPInfoMessageCell"];
+ 
+        PPInfoMessageCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPInfoMessageCell"];
+        [cell layoutLeftContent:arr[indexPath.row] rightImage:indexPath.row ==0? @"http://pic6.huitu.com/res/20130116/84481_20130116142820494200_1.jpg":[UIImage imageNamed:@"setting_myQR"] imageWidth:indexPath.row == 0 ? 90:30];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             return cell;
-            
-        }
+        
     }
     else
     {
         PPSettingCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PPSettingCell"];
+        [cell layoutContent:arr[indexPath.row] textAligent:NSTextAlignmentLeft];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
         
         
@@ -92,5 +102,12 @@ NSArray * titleArr ()
     
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if(section == 0)
+    {
+        return 10;
+    }
+    return 15;
+}
 @end

@@ -11,6 +11,7 @@
 #import "PPSettingCell.h"
 #import "PPAccountSecurityViewController.h"
 
+
 @interface PPSetingViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;

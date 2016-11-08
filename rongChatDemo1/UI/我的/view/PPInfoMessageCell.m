@@ -50,10 +50,11 @@
     
     [self.iconView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(self.contentView.mas_right);
-        make.top.mas_equalTo(self.contentView.mas_top).mas_offset(5);
-        make.bottom.mas_equalTo(self.contentView.mas_bottom).mas_offset(-5);
-        make.width.mas_equalTo(make.height);
+        make.centerY.mas_equalTo(self.contentView.mas_centerY);
+        make.height.mas_equalTo(90);
+        make.width.mas_equalTo(90);
     }];
+    self.leftLabel.font = [UIFont systemFontOfSize:14];
     
 }
 
@@ -62,7 +63,7 @@
 
     // Configure the view for the selected state
 }
-- (void)layoutLeftContent:(NSString *)content rightImage:(id)obj
+- (void)layoutLeftContent:(NSString *)content rightImage:(id)obj imageWidth:(CGFloat)width
 {
     self.leftLabel.text = content;
     if([obj isKindOfClass:[UIImage class]])
@@ -74,5 +75,10 @@
         [self.iconView sd_setImageWithURL:[NSURL URLWithString:obj]];
         
     }
+    
+    [self.iconView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(width);
+        make.height.mas_equalTo(width);
+    }];
 }
 @end

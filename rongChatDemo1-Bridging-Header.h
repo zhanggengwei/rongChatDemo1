@@ -15,3 +15,5 @@
 
 #import "PPLoginTableViewCell.h"
 #import "PPLoginViewController.h"
+
+#import "PPInfoMessageViewController.h"

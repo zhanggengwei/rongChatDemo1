@@ -129,6 +129,13 @@ class PPMyViewController: PPBaseViewController ,UITableViewDelegate,UITableViewD
             let controller:PPSetingViewController = PPSetingViewController.init();
             controller.hidesBottomBarWhenPushed = true;
             self.navigationController?.pushViewController(controller, animated:true)
+        }else if(indexPath.section == 0&&indexPath.row == 0)
+        {
+            let controller:PPInfoMessageViewController = PPInfoMessageViewController.init();
+            
+            controller.hidesBottomBarWhenPushed = true;
+            self.navigationController?.pushViewController(controller, animated:true)
+            
         }
     }
     func numberOfSections(in tableView: UITableView) -> Int {

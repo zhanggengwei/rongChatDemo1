@@ -10,7 +10,8 @@
 
 @interface PPInfoMessageCell : UITableViewCell
 
-- (void)layoutLeftContent:(NSString *)content rightImage:(id)obj;
+- (void)layoutLeftContent:(NSString *)content rightImage:(id)obj imageWidth:(CGFloat)width;
+
 
 
 @end
