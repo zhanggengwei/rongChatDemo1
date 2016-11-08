@@ -35,3 +35,8 @@
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:[PPUserBase class]];
 }
 @end
+
+
+@implementation PPUploadImageToken
+
+@end

@@ -47,3 +47,13 @@
 }
 
 @end
+
+@implementation PPUploadImageTokenResponse
+
++ (NSValueTransformer *)resultJSONTransformer
+{
+    return  [MTLJSONAdapter dictionaryTransformerWithModelClass:[PPUploadImageToken class]];
+    
+}
+
+@end

@@ -9,7 +9,7 @@
 #import "PPShowSelectIconViewController.h"
 #import <WActionSheet/NLActionSheet.h>
 #import "PPImageUtil.h"
-
+#import <SFHFKeychainUtils/SFHFKeychainUtils.h>
 
 @interface PPShowSelectIconViewController ()<UIImagePickerControllerDelegate>
 @property (nonatomic,strong) UIImageView * imageView;
@@ -92,9 +92,17 @@
     self.imageView.image = self.uploadImage;
     [picker dismissViewControllerAnimated:YES completion:nil];
     
-    [[PPDateEngine manager]requestUploadImageToken:^(id aTaskResponse) {
+    [[PPDateEngine manager]requestUploadImageToken:^(PPUploadImageTokenResponse *  aTaskResponse) {
         NSLog(@"aTaskResponse  == %@",aTaskResponse);
-        
+        if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
+        {
+            [[PPDateEngine manager]requsetUploadImageResponse:^(id aTaskResponse) {
+                
+            } UploadFile:UIImagePNGRepresentation(self.uploadImage) UserId:[SFHFKeychainUtils getPasswordForUsername:kPPUserInfoUserID andServiceName:kPPServiceName error:nil] uploadToken:aTaskResponse.result.token];
+            
+            
+            
+        }
     }];
     
     

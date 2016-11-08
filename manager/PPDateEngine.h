@@ -37,7 +37,6 @@
 
 - (void)requestUploadImageToken:(PPResponseBlock())aResponseBlock;
 
-- (void)requsetResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId;
 //user/blacklist
 //获取用户的黑名单
 - (void)requestGetBlackFriendListResponse:(PPResponseBlock())aResponseBlock;
@@ -75,6 +74,8 @@
 - (void)requsetUpdateGroupResponse:(void (^)(id))aResponseBlock GroupName:(NSString *)groupName groupId:(NSString *)groupId;
 
 - (void)requsetInviteUsersResponse:(void (^)(id))aResponseBlock addUserId:(NSString *)friendUserID content:(NSString *)content;
+
+- (void)requsetUploadImageResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId uploadToken:(NSString *)token;
 
 
 @end

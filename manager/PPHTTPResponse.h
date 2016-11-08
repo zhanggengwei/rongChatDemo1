@@ -31,3 +31,9 @@
 
 @interface PPUserBaseInfoResponse :PPHTTPResponse
 @end
+
+
+@interface PPUploadImageTokenResponse : PPHTTPResponse
+@property (nonatomic,strong) PPUploadImageToken * result;
+
+@end

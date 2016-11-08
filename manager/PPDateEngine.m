@@ -341,15 +341,20 @@
     
     [manager GET:kPPUrlUploadImageToken parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
     {
+        NSError * error;
+        PPUploadImageTokenResponse * response = [MTLJSONAdapter modelOfClass:[PPUploadImageTokenResponse class] fromJSONDictionary:responseObject error:&error];
+        [self _completeWithResponse:response block:aResponseBlock];
+        
         NSLog(@"responseObject == %@",responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"error == %@",error);
-        
+        PPHTTPResponse * response = [PPHTTPResponse responseWithError:error];
+         [self _completeWithResponse:response block:aResponseBlock];
         
     }];
 }
 
-- (void)requsetResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId
+- (void)requsetUploadImageResponse:(PPResponseBlock())aResponseBlock UploadFile:(NSData *)imageData UserId:(NSString *)auserId uploadToken:(NSString *)token
 {
     //进行 图片的上传  
     
@@ -371,7 +376,7 @@
     }
     key = [NSString stringWithString:str];
     NSMutableDictionary *params = [NSMutableDictionary new];
-    [params setValue:@"token" forKey:@"token"];
+    [params setValue:token forKey:@"token"];
     [params setValue:key forKey:@"key"];
     
     NSMutableDictionary *ret = [NSMutableDictionary dictionary];
@@ -388,7 +393,7 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
                             mimeType:@"application/octet-stream"];
 }
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
-              
+              NSLog(@"resoonse == %@",responseObject);
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"请求失败");
