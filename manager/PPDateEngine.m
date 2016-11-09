@@ -73,6 +73,9 @@
 #define kPPUrlRenameGroupName [NSString stringWithFormat:@"%@group/rename",kPPUrlHttp]
 
 #define kPPUrlInviteFriend [NSString stringWithFormat:@"%@friendship/invite",kPPUrlHttp]
+///user/set_portrait_uri
+
+#define KppUrlsetAvatuaUrl [NSString stringWithFormat:@"%@user/set_portrait_uri",kPPUrlHttp]
 
 @implementation PPDateEngine
 
@@ -394,6 +397,13 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
 }
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSLog(@"resoonse == %@",responseObject);
+              NSDictionary * dict = responseObject;
+              NSString * url = [NSString stringWithFormat:@"http://7xogjk.com1.z0.glb.clouddn.com/%@",responseObject[@"key"]];
+               [self requestSetHeadUrlResponse:^(id aTaskResponse) {
+                   
+               } headUrl:url];
+              
+              NSLog(@"Url == %@",url);
           }
           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"请求失败");
@@ -556,5 +566,21 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
     }];
     
 }
+
+- (void)requestSetHeadUrlResponse:(PPResponseBlock())aResponseBlock  headUrl:(NSString *)headUrl
+{
+    PPHTTPManager * manager = [PPHTTPManager manager];
+    NSDictionary *params = @{ @"portraitUri" : headUrl };
+    [manager POST:KppUrlsetAvatuaUrl parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@",responseObject);
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"error == %@",error);
+        
+        
+    }];
+    
+}//user/set_portrait_uri
 
 @end
