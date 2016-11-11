@@ -9,7 +9,7 @@
 #define USER_INFO_TABLENAME @"USER_INFO_TABLENAME"
 
 #import "PPTDBEngine.h"
-
+#import "PPFileManager.h"
 @interface PPTDBEngine ()
 
 @property (nonatomic,strong) FMDatabase * db;
@@ -34,15 +34,31 @@
 - (void)loadDataBase:(NSString *)userID
 {
     
+    NSString * dbPath = [[PPFileManager sharedManager]pathForDomain:PPFileDirDomain_User appendPathName:userID];
+    dbPath = [dbPath stringByAppendingPathComponent:@"user.db"];
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    dbPath = [documentPath stringByAppendingPathComponent:@"members.db"];//成员列表数据库
     
-    self.db = [[FMDatabase alloc]initWithPath:@""];
-    if([self.db open])
+    NSFileManager *fm = [[NSFileManager alloc]init];
+    BOOL isNewUser = ![fm fileExistsAtPath:dbPath];
+    
+    self.db = [FMDatabase databaseWithPath:dbPath];
+    if(![self.db open])
     {
-        
-    }else
-    {
-        
+        [fm removeItemAtPath:dbPath error:nil];
+        self.db = [FMDatabase databaseWithPath:dbPath];
+        [self createTables];
     }
+    else if(isNewUser)
+    {
+        [self createTables];
+    }
+    [self.db close];
+    
+}
+- (void)createTables
+{
+    
 }
 
 - (void)saveUserInfo:(PPUserBase *)baseInfo

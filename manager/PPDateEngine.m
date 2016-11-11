@@ -122,15 +122,18 @@
             
             [SFHFKeychainUtils storeUsername:kPPUserInfoUserID andPassword:userID forServiceName:kPPServiceName updateExisting:YES error:&error];
             
-            [[PPDateEngine manager]requestGetUserInfoResponse:^(id aTaskResponse) {
-                NSLog(@"aTaskResponse =  %@",aTaskResponse);
-                
+            [[PPDateEngine manager]requestGetUserInfoResponse:^(PPUserBaseInfoResponse * aTaskResponse) {
+                if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
+                {
+                    [[PPTDBEngine shareManager]loadDataBase:userID];
+                    
+                }
                 
             } userID:userID];
             
             
         } errorBlock:^(RCConnectErrorCode code) {
-            NSLog(@"code ==%d",code);
+            NSLog(@"code ==%ld",code);
         
         } tokenIncorrectBlock:^{
             
@@ -162,8 +165,15 @@
     [manager GET:kPPUrlUserInfo(userId) parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"responseObject =%@",responseObject);
         
+        PPUserBaseInfoResponse * response = [MTLJSONAdapter modelOfClass:[PPUserBaseInfoResponse class] fromJSONDictionary:responseObject error:nil];
+        [self _completeWithResponse:response block:aResponseBlock];
+        
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"error ==%@",error);
+        PPHTTPResponse * response = [PPHTTPResponse responseWithError:error];
+        [self _completeWithResponse:response
+                              block:aResponseBlock];
+        
         
     }];
     
@@ -397,10 +407,16 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
 }
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSLog(@"resoonse == %@",responseObject);
-              NSDictionary * dict = responseObject;
+              
               NSString * url = [NSString stringWithFormat:@"http://7xogjk.com1.z0.glb.clouddn.com/%@",responseObject[@"key"]];
-               [self requestSetHeadUrlResponse:^(id aTaskResponse) {
-                   
+               [self requestSetHeadUrlResponse:^(PPHTTPResponse * aTaskResponse) {
+                   if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
+                   {
+                       
+                   }else
+                   {
+                       
+                   }
                } headUrl:url];
               
               NSLog(@"Url == %@",url);
@@ -573,12 +589,14 @@ constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
     NSDictionary *params = @{ @"portraitUri" : headUrl };
     [manager POST:KppUrlsetAvatuaUrl parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"%@",responseObject);
+        PPHTTPResponse * response = [MTLJSONAdapter modelOfClass:[PPHTTPResponse class] fromJSONDictionary:responseObject error:nil];
+        [self _completeWithResponse:response block:aResponseBlock];
         
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"error == %@",error);
-        
-        
+        PPHTTPResponse * response = [PPHTTPResponse responseWithError:error];
+        [self _completeWithResponse:response block:aResponseBlock];
     }];
     
 }//user/set_portrait_uri

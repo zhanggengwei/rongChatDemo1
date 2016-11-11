@@ -96,9 +96,16 @@
         NSLog(@"aTaskResponse  == %@",aTaskResponse);
         if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
         {
+            
+            PPUploadImageToken * resulst = aTaskResponse.result;
+            
+            NSString * image_token = resulst.token;
+            
+            
             [[PPDateEngine manager]requsetUploadImageResponse:^(id aTaskResponse) {
                 
-            } UploadFile:UIImagePNGRepresentation(self.uploadImage) UserId:[SFHFKeychainUtils getPasswordForUsername:kPPUserInfoUserID andServiceName:kPPServiceName error:nil] uploadToken:aTaskResponse.result.token];
+            } UploadFile:UIImagePNGRepresentation(self.uploadImage) UserId:[SFHFKeychainUtils getPasswordForUsername:kPPUserInfoUserID andServiceName:kPPServiceName error:nil] uploadToken:image_token];
+            
             
             
             

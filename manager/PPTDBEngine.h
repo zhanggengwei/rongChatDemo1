@@ -10,4 +10,8 @@
 
 @interface PPTDBEngine : NSObject
 
++ (instancetype)shareManager;
+
+- (void)loadDataBase:(NSString *)userID;
+
 @end

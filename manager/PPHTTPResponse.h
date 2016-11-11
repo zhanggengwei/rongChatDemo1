@@ -34,6 +34,6 @@
 
 
 @interface PPUploadImageTokenResponse : PPHTTPResponse
-@property (nonatomic,strong) PPUploadImageToken * result;
+
 
 @end
