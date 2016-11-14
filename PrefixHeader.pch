@@ -22,6 +22,12 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "PPDateEngine.h"
 #import "PPTDBEngine.h"
+#import "OTFileManager.h"
+#import <RongIMLib/RCIMClient.h>
+#import "PPChatTools.h"
+
+#define  OBJC_APPIsLogin @"APPIsLogin"
+
 #define imageNamed(name) [UIImage imageNamed:name]
 
 #define OBJC_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width

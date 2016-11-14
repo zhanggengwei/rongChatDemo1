@@ -114,7 +114,7 @@
         if(response.code.integerValue == kPPResponseSucessCode){
             
         }
-        [[PPChatTools shared]connectWithTokenWithToken:token sucessBlock:^(NSString * _Nullable content) {
+        [[PPChatTools shareManager]connectWithToken:token sucessBlock:^(NSString *content) {
             NSError * error;
             [SFHFKeychainUtils storeUsername:kPPLoginName andPassword:phone forServiceName:kPPServiceName updateExisting:YES error:&error];
             [SFHFKeychainUtils storeUsername:kPPLoginPassWord andPassword:passWord forServiceName:kPPServiceName updateExisting:YES error:&error];
@@ -125,19 +125,19 @@
             [[PPDateEngine manager]requestGetUserInfoResponse:^(PPUserBaseInfoResponse * aTaskResponse) {
                 if(aTaskResponse.code.integerValue == kPPResponseSucessCode)
                 {
-                    [[PPTDBEngine shareManager]loadDataBase:userID];
+                    [PPTDBEngine shareManager];
+                    [[NSNotificationCenter defaultCenter]postNotificationName:kPPObserverLoginSucess object:nil];
                     
                 }
                 
             } userID:userID];
             
+        } failBloc:^(RCConnectErrorCode code) {
             
-        } errorBlock:^(RCConnectErrorCode code) {
-            NSLog(@"code ==%ld",code);
-        
         } tokenIncorrectBlock:^{
             
         }];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         PPHTTPResponse *response = [PPHTTPResponse responseWithError:error];
         [self _completeWithResponse:response block:aResponseBlock];

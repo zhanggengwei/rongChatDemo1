@@ -26,9 +26,26 @@
     
     dispatch_once(&token, ^{
         shareInstance = [self new];
+        [[NSNotificationCenter defaultCenter]addObserver:shareInstance selector:@selector(loginSucess:) name:kPPObserverLoginSucess object:nil];
+        
     
     });
     return shareInstance;
+}
+
+- (void)loginSucess:(NSNotification *)noti
+{
+    NSString * userID = [SFHFKeychainUtils getPasswordForUsername:kPPUserInfoUserID andServiceName:kPPServiceName error:nil];
+    
+    NSString * dbPath = [[PPFileManager sharedManager]pathForDomain:PPFileDirDomain_User appendPathName:userID];
+    //创建用户文件夹
+    BOOL isDir;
+    OTF_FileExistsAtPath(dbPath, &isDir);
+    if (!isDir) {
+        OTF_CreateDir(dbPath);
+    }
+    [self loadDataBase:userID];
+    
 }
 
 - (void)loadDataBase:(NSString *)userID
@@ -36,8 +53,6 @@
     
     NSString * dbPath = [[PPFileManager sharedManager]pathForDomain:PPFileDirDomain_User appendPathName:userID];
     dbPath = [dbPath stringByAppendingPathComponent:@"user.db"];
-    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    dbPath = [documentPath stringByAppendingPathComponent:@"members.db"];//成员列表数据库
     
     NSFileManager *fm = [[NSFileManager alloc]init];
     BOOL isNewUser = ![fm fileExistsAtPath:dbPath];
@@ -58,7 +73,26 @@
 }
 - (void)createTables
 {
+    if([self queryTable:USER_INFO_TABLENAME]==NO)
+    {
+        [self createUser_Info_TableName];
+        
+    }
+}
+- (BOOL)queryTable:(NSString *)tableName
+{
     
+    NSString * selectSql = [NSString stringWithFormat:@"select * from \'%@\';",tableName];
+    
+    FMResultSet * result = [self.db executeQuery:selectSql];
+   return  result.next;
+}
+
+- (void)dropTableName:(NSString *)tableName
+{
+    NSString * dropSql = [NSString stringWithFormat: @"truncate table \'%@\'",tableName];
+    
+    [self.db executeQuery:dropSql];
 }
 
 - (void)saveUserInfo:(PPUserBase *)baseInfo
@@ -71,6 +105,7 @@
     
     NSString * createUser_Info = [NSString stringWithFormat:@"create table  if not exists %@(indexId text  primary key not null,nickname text,displayName text,portraitUri text,updatedAt text,phone text,region text,isSelf bool)",USER_INFO_TABLENAME];
     
+    [self.db executeQuery:createUser_Info];
     
 }
 

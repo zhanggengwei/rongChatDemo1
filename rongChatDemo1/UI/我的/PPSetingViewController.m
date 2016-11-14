@@ -105,6 +105,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
     if (indexPath.section ==0 && indexPath.row ==0) {
         PPAccountSecurityViewController * controller = [PPAccountSecurityViewController new];
         [self.navigationController pushViewController:controller animated:YES];

@@ -184,7 +184,7 @@ class PPTabBarButton: UIButton {
 
 
 
-open class PPTabBarController: UITabBarController {
+public class PPTabBarController: UITabBarController {
     var seleBtn: UIButton?
     var tabBarHeight:CGFloat = 49.0
     var titleArray = [String]()
@@ -208,8 +208,13 @@ open class PPTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    init(controllerArray:[String],titleArray:[String],imageArray:[String],selectImageArr:[String],height:CGFloat?)
+    init(array:NSArray)
+    {
+        
+        super.init();
+        
+    }
+   public init(controllerArray:[String],titleArray:[String],imageArray:[String],selectImageArr:[String],height:CGFloat?)
     {
         self.titleArray = titleArray;
         self.imageArray = imageArray;

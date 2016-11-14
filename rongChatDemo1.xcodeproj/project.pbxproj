@@ -39,9 +39,7 @@
 		751894261DCD6A4D00955C47 /* PPHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941A1DCD6A4D00955C47 /* PPHTTPManager.m */; };
 		751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */; };
 		751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */; };
-		7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894211DCD6A4D00955C47 /* PPChatTools.swift */; };
 		7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894231DCD6A4D00955C47 /* PPTool.m */; };
-		751894311DCD764500955C47 /* PPMachios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751894301DCD764500955C47 /* PPMachios.swift */; };
 		751894341DCE18A300955C47 /* PPLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894331DCE18A300955C47 /* PPLoginTableViewCell.m */; };
 		751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894361DCE242D00955C47 /* PPLoginViewController.m */; };
 		7518943A1DCE420400955C47 /* UITextField+UITextField_WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 751894391DCE420400955C47 /* UITextField+UITextField_WJ.m */; };
@@ -87,6 +85,9 @@
 		7570832F1DCB8105000148CB /* ff_IconQRCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832C1DCB8105000148CB /* ff_IconQRCode.png */; };
 		757083301DCB8105000148CB /* ff_IconQRCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832D1DCB8105000148CB /* ff_IconQRCode@2x.png */; };
 		757083311DCB8105000148CB /* ff_IconQRCode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7570832E1DCB8105000148CB /* ff_IconQRCode@3x.png */; };
+		75A089691DD9F48E00F3EF79 /* PPTUserInfoEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A089681DD9F48E00F3EF79 /* PPTUserInfoEngine.m */; };
+		75A0896C1DD9F5EF00F3EF79 /* PPChatTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A0896B1DD9F5EF00F3EF79 /* PPChatTools.m */; };
+		75A0896F1DDA044C00F3EF79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A0896E1DDA044C00F3EF79 /* AppDelegate.m */; };
 		75A7C8ED1DCED20E0090D892 /* kPPObserverDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */; };
 		75A7C8F01DCF1C6D0090D892 /* PPTDBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A7C8EF1DCF1C6D0090D892 /* PPTDBEngine.m */; };
 		75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B0FCB71DC8E62C00B0ED9B /* PPPersonTableViewCell.m */; };
@@ -119,8 +120,6 @@
 		75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */; };
 		75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */; };
 		75C39EFE1DC4C6D10066E7B1 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */; };
-		75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */; };
-		75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CDD1DB8F17800721145 /* AppDelegate.swift */; };
 		75CC9CE31DB8F17800721145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE11DB8F17800721145 /* Main.storyboard */; };
 		75CC9CE81DB8F17800721145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */; };
 		75CC9CF31DB8F17800721145 /* rongChatDemo1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC9CF21DB8F17800721145 /* rongChatDemo1Tests.swift */; };
@@ -214,10 +213,8 @@
 		7518941C1DCD6A4D00955C47 /* PPHTTPRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPRequestSerializer.m; sourceTree = "<group>"; };
 		7518941D1DCD6A4D00955C47 /* PPHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPHTTPResponse.h; sourceTree = "<group>"; };
 		7518941E1DCD6A4D00955C47 /* PPHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPHTTPResponse.m; sourceTree = "<group>"; };
-		751894211DCD6A4D00955C47 /* PPChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPChatTools.swift; sourceTree = "<group>"; };
 		751894221DCD6A4D00955C47 /* PPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTool.h; sourceTree = "<group>"; };
 		751894231DCD6A4D00955C47 /* PPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTool.m; sourceTree = "<group>"; };
-		751894301DCD764500955C47 /* PPMachios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMachios.swift; sourceTree = "<group>"; };
 		751894321DCE18A300955C47 /* PPLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoginTableViewCell.h; sourceTree = "<group>"; };
 		751894331DCE18A300955C47 /* PPLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPLoginTableViewCell.m; sourceTree = "<group>"; };
 		751894351DCE242D00955C47 /* PPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPLoginViewController.h; sourceTree = "<group>"; };
@@ -267,6 +264,12 @@
 		7570832C1DCB8105000148CB /* ff_IconQRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ff_IconQRCode.png; sourceTree = "<group>"; };
 		7570832D1DCB8105000148CB /* ff_IconQRCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconQRCode@2x.png"; sourceTree = "<group>"; };
 		7570832E1DCB8105000148CB /* ff_IconQRCode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_IconQRCode@3x.png"; sourceTree = "<group>"; };
+		75A089671DD9F48E00F3EF79 /* PPTUserInfoEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTUserInfoEngine.h; sourceTree = "<group>"; };
+		75A089681DD9F48E00F3EF79 /* PPTUserInfoEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPTUserInfoEngine.m; sourceTree = "<group>"; };
+		75A0896A1DD9F5EF00F3EF79 /* PPChatTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPChatTools.h; sourceTree = "<group>"; };
+		75A0896B1DD9F5EF00F3EF79 /* PPChatTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPChatTools.m; sourceTree = "<group>"; };
+		75A0896D1DDA044C00F3EF79 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		75A0896E1DDA044C00F3EF79 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		75A7C8EB1DCED20E0090D892 /* kPPObserverDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kPPObserverDef.h; sourceTree = "<group>"; };
 		75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kPPObserverDef.m; sourceTree = "<group>"; };
 		75A7C8EE1DCF1C6D0090D892 /* PPTDBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPTDBEngine.h; sourceTree = "<group>"; };
@@ -305,9 +308,7 @@
 		75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		75C39EFA1DC4C6D00066E7B1 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		75C39F031DC4DE330066E7B1 /* rongChatDemo1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rongChatDemo1-Bridging-Header.h"; sourceTree = "<group>"; };
-		75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPUrlDef.swift; sourceTree = "<group>"; };
 		75CC9CDA1DB8F17800721145 /* rongChatDemo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rongChatDemo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75CC9CDD1DB8F17800721145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CC9CE21DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75CC9CE71DB8F17800721145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75CC9CE91DB8F17800721145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -441,6 +442,8 @@
 				75A7C8EC1DCED20E0090D892 /* kPPObserverDef.m */,
 				75A7C8EE1DCF1C6D0090D892 /* PPTDBEngine.h */,
 				75A7C8EF1DCF1C6D0090D892 /* PPTDBEngine.m */,
+				75A089671DD9F48E00F3EF79 /* PPTUserInfoEngine.h */,
+				75A089681DD9F48E00F3EF79 /* PPTUserInfoEngine.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -448,7 +451,8 @@
 		751894201DCD6A4D00955C47 /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				751894211DCD6A4D00955C47 /* PPChatTools.swift */,
+				75A0896A1DD9F5EF00F3EF79 /* PPChatTools.h */,
+				75A0896B1DD9F5EF00F3EF79 /* PPChatTools.m */,
 				751894221DCD6A4D00955C47 /* PPTool.h */,
 				751894231DCD6A4D00955C47 /* PPTool.m */,
 				40E014151DD075A9002D189C /* NSString+MD5.h */,
@@ -689,8 +693,6 @@
 			children = (
 				751894141DCD6A4D00955C47 /* manager */,
 				751894201DCD6A4D00955C47 /* tools */,
-				75C39F0B1DC590130066E7B1 /* PPUrlDef.swift */,
-				751894301DCD764500955C47 /* PPMachios.swift */,
 				75C39EB41DC4897C0066E7B1 /* resource */,
 				75CC9CDC1DB8F17800721145 /* rongChatDemo1 */,
 				75CC9CF11DB8F17800721145 /* rongChatDemo1Tests */,
@@ -718,7 +720,8 @@
 				75E881AD1DCF3E1C009CC908 /* rongChatDemo1.entitlements */,
 				75C39EEF1DC4C5720066E7B1 /* tools */,
 				75C39ED61DC4C55A0066E7B1 /* UI */,
-				75CC9CDD1DB8F17800721145 /* AppDelegate.swift */,
+				75A0896D1DDA044C00F3EF79 /* AppDelegate.h */,
+				75A0896E1DDA044C00F3EF79 /* AppDelegate.m */,
 				75CC9CE61DB8F17800721145 /* LaunchScreen.storyboard */,
 				75CC9CE91DB8F17800721145 /* Info.plist */,
 			);
@@ -1031,6 +1034,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A0896F1DDA044C00F3EF79 /* AppDelegate.m in Sources */,
 				40E013FC1DD07544002D189C /* des.m in Sources */,
 				40E0145D1DD195DF002D189C /* PPColorUtil.m in Sources */,
 				7518943D1DCEAE3700955C47 /* PPRegisterViewController.m in Sources */,
@@ -1039,7 +1043,7 @@
 				40E0144D1DD171A1002D189C /* PPShowSelectIconViewController.m in Sources */,
 				40E013EB1DD07495002D189C /* OTFileManager.m in Sources */,
 				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,
-				751894311DCD764500955C47 /* PPMachios.swift in Sources */,
+				75A089691DD9F48E00F3EF79 /* PPTUserInfoEngine.m in Sources */,
 				75D7DB771DCB68FA0020020A /* PPContactListCell.m in Sources */,
 				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
 				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
@@ -1052,7 +1056,6 @@
 				40E014471DD0861C002D189C /* PPInfoMessageCell.m in Sources */,
 				751894241DCD6A4D00955C47 /* PPDataDef.m in Sources */,
 				40E014001DD07544002D189C /* UrlEncode.m in Sources */,
-				75C39F0C1DC590130066E7B1 /* PPUrlDef.swift in Sources */,
 				40E013EC1DD07495002D189C /* PPFileManager.m in Sources */,
 				7504F1CA1DCA3D0F0039FFB9 /* PPAddFriendViewController.m in Sources */,
 				75A7C8ED1DCED20E0090D892 /* kPPObserverDef.m in Sources */,
@@ -1070,11 +1073,10 @@
 				751894271DCD6A4D00955C47 /* PPHTTPRequestSerializer.m in Sources */,
 				75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */,
 				40E014171DD075A9002D189C /* NSString+MD5.m in Sources */,
-				7518942A1DCD6A4D00955C47 /* PPChatTools.swift in Sources */,
+				75A0896C1DD9F5EF00F3EF79 /* PPChatTools.m in Sources */,
 				751894281DCD6A4D00955C47 /* PPHTTPResponse.m in Sources */,
 				75C39EE91DC4C55A0066E7B1 /* ViewController.swift in Sources */,
 				75B0FCB81DC8E62C00B0ED9B /* PPPersonTableViewCell.m in Sources */,
-				75CC9CDE1DB8F17800721145 /* AppDelegate.swift in Sources */,
 				751894251DCD6A4D00955C47 /* PPDateEngine.m in Sources */,
 				7518942B1DCD6A4D00955C47 /* PPTool.m in Sources */,
 			);

@@ -43,7 +43,7 @@
     self.contentLabel.font = [UIFont systemFontOfSize:15];
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.contentView.mas_centerY);
-        make.width.mas_equalTo(self.frame.size.width - 20);
+        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(-15);
         make.height.mas_equalTo(15);
         make.left.mas_equalTo(self.contentView.mas_left).mas_equalTo(15);
     }];
