@@ -208,12 +208,7 @@ public class PPTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    init(array:NSArray)
-    {
-        
-        super.init();
-        
-    }
+  
    public init(controllerArray:[String],titleArray:[String],imageArray:[String],selectImageArr:[String],height:CGFloat?)
     {
         self.titleArray = titleArray;

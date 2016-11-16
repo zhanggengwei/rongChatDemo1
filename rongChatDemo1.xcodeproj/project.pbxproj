@@ -114,8 +114,6 @@
 		75C39EEB1DC4C55A0066E7B1 /* PPWeixiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EDF1DC4C55A0066E7B1 /* PPWeixiViewController.swift */; };
 		75C39EEC1DC4C55A0066E7B1 /* PPMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */; };
 		75C39EEE1DC4C55A0066E7B1 /* PPContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */; };
-		75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */; };
-		75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */; };
 		75C39EFB1DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF71DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png */; };
 		75C39EFC1DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */; };
 		75C39EFD1DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C39EF91DC4C6D00066E7B1 /* LaunchImage-800-Portrait-736h@3x.png */; };
@@ -300,8 +298,6 @@
 		75C39EE11DC4C55A0066E7B1 /* PPMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPMyViewController.swift; sourceTree = "<group>"; };
 		75C39EE51DC4C55A0066E7B1 /* PPContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPContactListViewController.swift; sourceTree = "<group>"; };
 		75C39EF01DC4C5720066E7B1 /* Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
-		75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPColorUItil.swift; sourceTree = "<group>"; };
-		75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPImageUtil.swift; sourceTree = "<group>"; };
 		75C39EF31DC4C5720066E7B1 /* PPMachos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMachos.h; sourceTree = "<group>"; };
 		75C39EF71DC4C6D00066E7B1 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		75C39EF81DC4C6D00066E7B1 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
@@ -654,8 +650,6 @@
 				40E014591DD19549002D189C /* PPImageUtil.m */,
 				40E013ED1DD07544002D189C /* Codec */,
 				75C39EF01DC4C5720066E7B1 /* Header.pch */,
-				75C39EF11DC4C5720066E7B1 /* PPColorUItil.swift */,
-				75C39EF21DC4C5720066E7B1 /* PPImageUtil.swift */,
 				75C39EF31DC4C5720066E7B1 /* PPMachos.h */,
 			);
 			path = tools;
@@ -1045,8 +1039,6 @@
 				751894371DCE242D00955C47 /* PPLoginViewController.m in Sources */,
 				75A089691DD9F48E00F3EF79 /* PPTUserInfoEngine.m in Sources */,
 				75D7DB771DCB68FA0020020A /* PPContactListCell.m in Sources */,
-				75C39EF51DC4C5720066E7B1 /* PPImageUtil.swift in Sources */,
-				75C39EF41DC4C5720066E7B1 /* PPColorUItil.swift in Sources */,
 				40E013FF1DD07544002D189C /* UrlDecode.m in Sources */,
 				40E0145A1DD19549002D189C /* PPImageUtil.m in Sources */,
 				40E013FD1DD07544002D189C /* Md5.m in Sources */,

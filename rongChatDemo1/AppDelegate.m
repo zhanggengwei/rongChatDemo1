@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "rongChatDemo1-swift.h"
+
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application
@@ -185,7 +185,7 @@ didReceiveLocalNotification:(UILocalNotification *)notification {
     
     
     
-    [PPTabBarController alloc]init
+    PPTab
  
     
     PPTabBarController * tabBarController = [[PPTabBarController alloc]init]
